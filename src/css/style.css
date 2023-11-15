@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bell-MT";
+  src: url("/public/fonts/");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: serif;
+}
+
+.hero {
+  background-image: url("/assets/hero-img.svg") ;
+  height: 1100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.hero-img {
+  width: 725px;
+}
+
+.join {
+  width: 173px;
+  height: 57px;
+  border-radius: 80%;
+}
+
+.big-button {
+  width: 527px;
+  height: 89px;
+  border-radius: 80%;
+}
+
