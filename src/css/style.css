@@ -26,7 +26,7 @@ h6 {
   font-family: "Bell-MT", serif;
 }
 
-.hero {
+.hero-section {
   background-image: url("/assets/hero-img.svg");
   height: 1000px;
   background-repeat: no-repeat;
