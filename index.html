@@ -30,7 +30,7 @@
           <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
           <li class="hover:text-red"><a href="teachers.html">TEACHERS</a></li>
           <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
-          <li class="hover:text-red"><a href="./contact.html">CONTACTS</a></li>
+          <li id="contact" class="hover:text-red"><a href="./contact.html">CONTACTS</a></li>
         </ul>
       </nav>
 
@@ -95,12 +95,12 @@
               </div>
               <p class="text-2xl text-dark-blue text-center">2H/WEEK</p>
 
-              <button
+             <a class="text-center" href="contact.html"><button
                 class="join mb-10 border w-fit border-dark-blue text-dark-blue place-self-center font-bold text-4xl font-heading hover:text-light-blue hover:bg-dark-blue"
                 href=""
               >
                 JOIN
-              </button>
+              </button></a> 
             </div>
           </div>
 
@@ -194,13 +194,15 @@
               BOOK PRIVATE LESSON
             </button>
           </div>
-          <img src="assets/flowers.svg" alt="" />
+          <div class="lg:w-2/5">
+          <img src="assets/flowers.svg" alt="" /></div>
         </div>
       </section>
 
       <section class="px-28 organizer">
         <div class="container flex justify-between items-center my-40">
-          <img src="assets/frame-up.svg" alt="" />
+          <div class="lg:w-2/5">
+          <img src="assets/frame-up.svg" alt="" /></div>
           <div class="w-2/5 flex flex-col">
             <p class="text-center pb-20 text-dark-blue text-2xl">
               IF YOU WANT TO INVITE ME AND ORGANIZE A WORKSHOP IN YOUR CITY,
@@ -218,9 +220,9 @@
         </div>
       </section>
 
-      <section class="px-28 video flex mt-20">
-        <div class="container flex justify-between">
-          <div class="w-2/5 flex flex-col justify-between h-auto">
+      <section class="px-28 video mt-20">
+        <div class="container lg:flex justify-between">
+          <div class="lg:w-2/5 flex flex-col justify-between h-auto">
             <div class="">
               <h2
                 class="text-red font-bold text-9xl text-center tracking-tight"
@@ -238,13 +240,13 @@
               </p>
             </div>
             <img
-              class="w-40 self-center align-bottom"
+              class="hidden lg:block w-40 self-center align-bottom"
               src="assets/big-logo-red.svg"
               alt=""
             />
           </div>
 
-          <div class="">
+          <div class="w-2/5">
             <iframe
               class="my-5"
               width="560"

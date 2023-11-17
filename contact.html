@@ -9,7 +9,7 @@
   <body>
     <nav>
       <ul
-        class="font-heading text-dark-blue font-bold text-3xl flex justify-around py-20"
+        class="hidden font-heading text-dark-blue font-bold text-3xl lg:flex justify-around py-20"
       >
         <li class="hover:text-red"><a href="index.html">HOME</a></li>
         <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
@@ -20,9 +20,10 @@
     </nav>
 
     <section class="flex justify-between">
-      <img src="assets/logo-contact.svg" alt="" />
-      <div class="w-1/3 mx-28 flex flex-col justify-between">
-        <div class="contact">
+      <div class="hidden lg:block">
+      <img src="assets/logo-contact.svg" alt="" /></div>
+      <div class="lg:w-1/3 mx-auto lg:mx-28 flex flex-col justify-between">
+        <div id="contact">
           <h3
             class="text-red font-bold text-7xl text-center tracking-tight mb-10"
           >
@@ -71,8 +72,8 @@
               ></textarea>
             </label>
             <button
-              class="dance place-self-center w-fit text-red text-4xl font-heading font-bold border border-red hover:text-white hover:bg-red"
-              href=""
+              class="dance mb-10 place-self-center w-fit text-red text-4xl font-heading font-bold border border-red hover:text-white hover:bg-red"
+              href="mailto:moin@hheels.dance"
             >
               DANCE
             </button>
@@ -94,8 +95,8 @@
             </div>
             <div class="self-end pb-20 text-2xl text-dark-blue">
               <a href="https://www.instagram.com/hheels.dance/"><i class="px-2 bi bi-instagram"></i></a>
-              <a href=""><i class="px-2 bi bi-envelope"></i></a>
-              <a href=""><i class="px-2 bi bi-whatsapp"></i></a>
+              <a href="mailto:moin@hheels.dance"><i class="px-2 bi bi-envelope"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=4915259516681"><i class="px-2 bi bi-whatsapp"></i></a>
               <a href="https://www.youtube.com/@VladaKosha"><i class="px-2 bi bi-youtube"></i></a>
             </div>
           </div>
