@@ -11,7 +11,7 @@ module.exports = {
       },
       fontFamily: {
         'serif': ['Bell-MT', 'ui-serif', 'Georgia'],
-      'paragraph': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+      'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
 
     }
   },
