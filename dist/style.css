@@ -572,6 +572,22 @@ video {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-28{
+  left: 7rem;
+}
+
+.left-40{
+  left: 10rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -737,12 +753,8 @@ video {
   background-color: rgb(148 169 201 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/assets\/hero-img\.jpg\'\)\]{
-  background-image: url('./assets/hero-img.jpg');
-}
-
 .bg-hero-image{
-  background-image: url('/assets/hero-img');
+  background-image: url('/assets/hero-img.jpg');
 }
 
 .p-20{
