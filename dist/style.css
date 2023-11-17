@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
@@ -813,12 +813,8 @@ video {
   vertical-align: bottom;
 }
 
-.font-heading{
-  font-family: Bell-MT, ui-serif, Georgia;
-}
-
 .font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Bell-MT, ui-serif, Georgia;
 }
 
 .text-2xl{
@@ -882,7 +878,17 @@ video {
 @font-face {
   font-family: "Bell-MT";
 
-  src: url("/public/fonts/");
+  src: url("/src/fonts/BellMT.ttf");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bell-MT";
+
+  src: url("/src/fonts/BellMTBold.ttf");
+
+  font-weight: 700;
 }
 
 h1,
@@ -895,7 +901,7 @@ h6 {
 }
 
 .hero {
-  background-image: url("/assets/hero-img.svg") ;
+  background-image: url("/assets/hero-img.svg");
   height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -989,4 +995,3 @@ h6 {
     width: 40%;
   }
 }
-
