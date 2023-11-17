@@ -11,7 +11,8 @@ module.exports = {
       },
       fontFamily: {
       'paragraph': ['Open Sans', 'ui-sans-serif', 'system-ui'],
-      'heading': ['Bell-MT', 'ui-serif', 'Georgia'],
+      'serif': ['Bell-MT', 'ui-serif', 'Georgia'],
+
     }
   },
   plugins: [],
