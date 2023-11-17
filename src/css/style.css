@@ -7,7 +7,14 @@
 
 @font-face {
   font-family: "Bell-MT";
-  src: url("/public/fonts/");
+  src: url("/src/fonts/BellMT.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bell-MT";
+  src: url("/src/fonts/BellMTBold.ttf");
+  font-weight: 700;
 }
 
 h1,
