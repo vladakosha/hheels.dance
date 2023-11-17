@@ -10,7 +10,7 @@ module.exports = {
         'nude': '#C9ADA7',
       },
       fontFamily: {
-      'paragraph': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+      // 'paragraph': ['Open Sans', 'ui-sans-serif', 'system-ui'],
       'serif': ['Bell-MT', 'ui-serif', 'Georgia'],
 
     }
