@@ -50,6 +50,7 @@ ul {
   width: 527px;
   height: 89px;
   border-radius: 80%;
+  border: 1px solid;
 }
 
 .dance {
@@ -57,4 +58,5 @@ ul {
   height: 57px;
   border-radius: 80%;
   font-family: 'Bell-MT';
+  border: 1px solid;
 }
