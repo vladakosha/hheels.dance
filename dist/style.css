@@ -915,6 +915,7 @@ ul {
 .join {
   width: 173px;
   height: 57px;
+  border: 1px solid;
   border-radius: 80%;
   font-family: 'Bell-MT';
 }
