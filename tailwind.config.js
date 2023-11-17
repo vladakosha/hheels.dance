@@ -13,7 +13,11 @@ module.exports = {
         'serif': ['Bell-MT', 'ui-serif', 'Georgia'],
       'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
 
-    }
+    },
+     backgroundImage: {
+        'hero-image': "url('/assets/hero-img')",
+
+      }
   },
   plugins: [],
 }
