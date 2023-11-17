@@ -855,10 +855,6 @@ video {
   letter-spacing: -0.025em;
 }
 
-.tracking-tighter{
-  letter-spacing: -0.05em;
-}
-
 .text-dark-blue{
   --tw-text-opacity: 1;
   color: rgb(45 51 62 / var(--tw-text-opacity));
@@ -906,7 +902,7 @@ ul {
 }
 
 .hero-section {
-  background-image: url("/assets/hero-img.svg");
+  background-image: url("/assets/hero-img.jpg");
   height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;

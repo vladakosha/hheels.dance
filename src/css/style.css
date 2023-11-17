@@ -28,7 +28,7 @@ ul {
 }
 
 .hero-section {
-  background-image: url("/assets/hero-img.svg");
+  background-image: url("/assets/hero-img.jpg");
   height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
