@@ -13,8 +13,8 @@ module.exports = {
       sans: ["Open Sans", "ui-sans-serif", "system-ui"],
     },
     extend: {
-      backgroundImage: {
-        "hero-image": "url('/assets/hero-img.jpg')",
+      // backgroundImage: {
+      //   "hero-image": "url('/assets/hero-img.jpg')",
       },
     },
     plugins: [],
