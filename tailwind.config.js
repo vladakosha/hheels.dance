@@ -5,8 +5,8 @@ module.exports = {
     colors: {
       "dark-blue": "#2D333E",
       "light-blue": "#94A9C9",
-      "red": "#BB4251",
-      "nude": "#C9ADA7",
+      red: "#BB4251",
+      nude: "#C9ADA7",
     },
     fontFamily: {
       serif: ["Bell-MT", "ui-serif", "Georgia"],
@@ -15,8 +15,7 @@ module.exports = {
     extend: {
       // backgroundImage: {
       //   "hero-image": "url('/assets/hero-img.jpg')",
-      },
     },
-    plugins: [],
   },
+  plugins: [],
 };

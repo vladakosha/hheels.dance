@@ -9,13 +9,35 @@
   <body>
     <nav>
       <ul
-        class=" text-dark-blue font-bold text-3xl flex justify-around py-20 tracking-tight"
+        class="hidden text-dark-blue font-bold text-3xl md:flex justify-around py-20 tracking-tight"
       >
         <li class="hover:text-red"><a href="index.html">HOME</a></li>
         <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
-        <li class="hover:text-red"><a href="teachers.html">TEACHERS</a></li>
+        <li class="hover:text-red">
+          <a href="teachers.html">CHOREOGRAPHERS</a>
+        </li>
         <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
-        <li class="hover:text-red"><a href="./contact.html">CONTACTS</a></li>
+        <li id="contact" class="hover:text-red">
+          <a href="./contact.html">CONTACTS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="md:hidden">
+      <i class="px-10 bi bi-list text-5xl text-dark-blue"></i>
+      <ul
+        id="mobile-menu"
+        class="fixed px-10 text-dark-blue font-bold text-3xl justify-around py-20 tracking-tight expose-menu"
+      >
+        <li class="hover:text-red"><a href="index.html">HOME</a></li>
+        <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
+        <li class="hover:text-red">
+          <a href="teachers.html">CHOREOGRAPHERS</a>
+        </li>
+        <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
+        <li id="contact" class="hover:text-red">
+          <a href="./contact.html">CONTACTS</a>
+        </li>
       </ul>
     </nav>
 
@@ -42,5 +64,60 @@
         </div>
       </div>
     </section>
+
+    <section class="px-28 private">
+      <div class="container flex justify-between items-center my-40">
+        <div class="w-2/5 flex flex-col">
+          <p class="text-center pb-20 text-dark-blue text-2xl">
+            <i>PRIVATE LESSONS</i> ARE IMPORTANT TO GET TO THE NEXT LEVEL FASTER
+            OR TO PREPARE FOR A SPECIFIC PROJECT. WHETHER IT IS A VIDEO SHOOT,
+            SOMETHING FOR YOUR PORTFOLIO, A CASTING, OR ANYTHING ELSE, I WILL BE
+            HAPPY TO HELP YOU REACH YOUR GOALS.
+          </p>
+          <a
+            class="big-button text-center py-6 place-self-center w-fit text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
+            href="contact.html"
+          >
+            BOOK PRIVATE LESSON
+          </a>
+        </div>
+        <div class="lg:w-2/5">
+          <img src="assets/flowers.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-28 organizer">
+      <div class="container flex justify-between items-center my-40">
+        <div class="lg:w-2/5">
+          <img src="assets/frame-up.svg" alt="" />
+        </div>
+        <div class="w-2/5 flex flex-col">
+          <p class="text-center pb-20 text-dark-blue text-2xl">
+            IF YOU WANT TO INVITE ME AND ORGANIZE A WORKSHOP IN YOUR CITY, FEEL
+            FREE TO CONTACT ME. I WILL BE HELPFUL IN: HIGH HEELS FOUNDATION AND
+            CHOREOGRAPHY FRAME UP FOUNDATION AND CHOREOGRAPHY CREATING A
+            CREW/SOLO SHOW.
+          </p>
+          <a
+            class="big-button text-center py-6 place-self-center text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
+            href="contact.html"
+          >
+            ORGANIZE WORKSHOP
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
+
+  <script>
+    const burgerIcon = document.querySelector(".bi-list");
+    const mobileMenu = document.querySelector("#mobile-menu");
+    window.addEventListener("scroll", () =>
+      document.querySelector("#mobile-menu").classList.add("menu-hidden")
+    );
+    burgerIcon.addEventListener("click", function () {
+      mobileMenu.classList.toggle("menu-hidden");
+    });
+  </script>
 </html>

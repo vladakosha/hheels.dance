@@ -29,7 +29,7 @@ ul {
 
 .hero-section {
   background-image: url("/assets/hero-img.jpg");
-  height: 1000px;
+  height: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -59,4 +59,23 @@ ul {
   border-radius: 80%;
   font-family: "Bell-MT";
   border: 1px solid;
+}
+
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+}
+
+.bi-list {
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.menu-hidden {
+  transform: translateX(-100%);
 }

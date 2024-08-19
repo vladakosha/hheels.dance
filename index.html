@@ -8,8 +8,11 @@
   </head>
   <body>
     <main>
-      <section class="hero-section bg-hero-image">
-        <div class="container">
+      <section
+        style="background-image: url(assets/hero-img.webp)"
+        class="h-screen w-full bg-cover"
+      >
+        <div class="">
           <div class="relative left-28 w-1/2">
             <img class="hero-img pt-10" src="assets/big-logo-blue.png" alt="" />
             <div class="absolute left-40 text-3xl text-dark-blue font-bold">
@@ -24,11 +27,31 @@
 
       <nav>
         <ul
-          class="text-dark-blue font-bold text-3xl flex justify-around py-20 tracking-tight"
+          class="hidden text-dark-blue font-bold text-3xl md:flex justify-around py-20 tracking-tight"
         >
           <li class="hover:text-red"><a href="index.html">HOME</a></li>
           <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
-          <li class="hover:text-red"><a href="teachers.html">TEACHERS</a></li>
+          <li class="hover:text-red">
+            <a href="teachers.html">CHOREOGRAPHERS</a>
+          </li>
+          <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
+          <li id="contact" class="hover:text-red">
+            <a href="./contact.html">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="md:hidden">
+        <i class="px-10 bi bi-list text-5xl text-dark-blue"></i>
+        <ul
+          id="mobile-menu"
+          class="fixed px-10 text-dark-blue font-bold text-3xl justify-around py-20 tracking-tight expose-menu"
+        >
+          <li class="hover:text-red"><a href="index.html">HOME</a></li>
+          <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
+          <li class="hover:text-red">
+            <a href="teachers.html">CHOREOGRAPHERS</a>
+          </li>
           <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
           <li id="contact" class="hover:text-red">
             <a href="./contact.html">CONTACTS</a>
@@ -43,24 +66,26 @@
               <h1
                 class="text-red font-bold text-8xl text-center tracking-tight"
               >
-                ABOUT VLADA KOSHA
+                ABOUT HHEELS
               </h1>
             </div>
             <div class="flex flex-col">
               <p class="text-center py-2 text-dark-blue">
-                STARTED MY JOURNEY AS A BALLET DANCER BEFORE FINDING MY
-                <i>TRUE PASSION</i> IN HIGH HEELS, NOW HAVING 10 YEARS OF
-                EXPERIENCE THERE. PUSHING BOUNDARIES AND REDEFINING DANCE, I
-                STRIVE TO ELEVATE HIGH HEELS AS A PROFESSIONAL DANCE STYLE
-                THROUGH TECHNIQUE CLASSES.
+                OUR DANCE STUDIO WAS BORN FROM A <i>PASSION</i> FOR HIGH HEELS
+                DANCE. WITH OVER A DECADE OF EXPERIENCE, WE'VE BEEN PUSHING
+                BOUNDARIES AND REDEFINING DANCE, STRIVING TO ELEVATE HIGH HEELS
+                AS A PROFESSIONAL DANCE STYLE THROUGH OUR TECHNIQUE-FOCUSED
+                CLASSES.
               </p>
               <p class="text-center py-2 text-dark-blue">
-                TECHNIQUE IS MY FOCUS, BUT IN MY CHOREOGRAPHY, I’M TRYING TO
-                CREATE SOMETHING <i>UNIQUE</i> TO DISCOVER THE IMPORTANCE OF
+                WHILE TECHNIQUE IS OUR CORNERSTONE, OUR CHOREOGRAPHY AIMS TO
+                CREATE SOMETHING
+                <i>UNIQUE</i>, HELPING STUDENTS DISCOVER THE IMPORTANCE OF
                 SELF-EXPRESSION THROUGH MOVEMENT AND <i>EMBRACE</i> THE
-                TRANSFORMATIVE POWER OF DANCE. BEYOND THE STUDIO, I DIRECT
-                CAPTIVATING VIDEOS AND CURATE SHOWS; YOU CAN FIND MY PORTFOLIO
-                HERE.
+                TRANSFORMATIVE POWER OF DANCE. BEYOND THE STUDIO, WE PRODUCE
+                CAPTIVATING VIDEOS AND CURATE SHOWS, SHOWCASING THE TALENTS OF
+                OUR INSTRUCTORS AND STUDENTS. EXPLORE OUR GALLERY TO SEE OUR
+                WORK IN ACTION.
               </p>
               <!-- <p class="text-center py-2 text-dark-blue">
                 IT’S VERY IMPORTANT FOR ME TO EDUCATE MYSELF AND PARTICIPATE IN
@@ -73,12 +98,26 @@
               </p> -->
             </div>
           </div>
-<div class="lg:w-2/5">
-          <img class="" src="assets/about.svg" alt="" class="flex items-end" /></div>
+          <div class="lg:w-2/5">
+            <img
+              class=""
+              src="assets/about.svg"
+              alt=""
+              class="flex items-end"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="courses flex justify-between">
+      <iframe
+        width="100%"
+        height="800px"
+        src="https://www.eversports.de/widget/w/0b1TJe?list=class"
+        frameborder="0"
+      >
+      </iframe>
+
+      <!-- <section class="courses flex justify-between">
         <div class="regular p-20 bg-light-blue">
           <h2
             class="text-8xl text-dark-blue text-center font-bold tracking-tight"
@@ -184,82 +223,17 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="px-28 private">
-        <div class="container flex justify-between items-center my-40">
-          <div class="w-2/5 flex flex-col">
-            <p class="text-center pb-20 text-dark-blue text-2xl">
-              <i>PRIVATE LESSONS</i> ARE IMPORTANT TO GET TO THE NEXT LEVEL
-              FASTER OR TO PREPARE FOR A SPECIFIC PROJECT. WHETHER IT IS A VIDEO
-              SHOOT, SOMETHING FOR YOUR PORTFOLIO, A CASTING, OR ANYTHING ELSE,
-              I WILL BE HAPPY TO HELP YOU REACH YOUR GOALS.
-            </p>
-            <a
-              class="big-button text-center py-6 place-self-center w-fit text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
-              href=""
-            >
-              BOOK PRIVATE LESSON
-            </a>
-          </div>
-          <div class="lg:w-2/5">
-            <img src="assets/flowers.svg" alt="" />
-          </div>
-        </div>
-      </section>
+      <section class="px-5 video flex justify-around">
+        <h2 class="text-red font-bold text-9xl text-center tracking-tight">
+          GALLERY
+         
 
-      <section class="px-28 organizer">
-        <div class="container flex justify-between items-center my-40">
-          <div class="lg:w-2/5">
-            <img src="assets/frame-up.svg" alt="" />
-          </div>
-          <div class="w-2/5 flex flex-col">
-            <p class="text-center pb-20 text-dark-blue text-2xl">
-              IF YOU WANT TO INVITE ME AND ORGANIZE A WORKSHOP IN YOUR CITY,
-              FEEL FREE TO CONTACT ME. I WILL BE HELPFUL IN: HIGH HEELS
-              FOUNDATION AND CHOREOGRAPHY FRAME UP FOUNDATION AND CHOREOGRAPHY
-              CREATING A CREW/SOLO SHOW.
-            </p>
-            <a
-              class="big-button text-center py-6 place-self-center text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
-              href=""
-            >
-              ORGANIZE WORKSHOP
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="px-28 video mt-20">
-        <div class="container lg:flex justify-between">
-          <div class="lg:w-2/5 flex flex-col justify-between h-auto">
-            <div class="">
-              <h2
-                class="text-red font-bold text-9xl text-center tracking-tight"
-              >
-                VIDEOS
-              </h2>
-              <p class="text-center py-10 text-red text-2xl">
-                I REALLY LOVE FILMMAKING AS A WAY OF <i>EXPRESSING YOURSELF</i>.
-                I HAVE PARTICIPATED IN AND ORGANIZED SHOOTS ON DIFFERENT BUDGETS
-                WITH DIFFERENT OBJECTIVES FROM DANCE TO TELEVISION. FURTHERMORE,
-                I ALSO PARTICIPATED AND ASSISTED CHOREOGRAPHERS IN BIG SHOWS,
-                LIKE THE OPENING OF THE SOCHI OLYMPICS IN 2014, AND STAGED SOME
-                BY MYSELF. I WOULD BE HAPPY TO COLLABORATE OR BE YOUR SHOW
-                PRODUCER. HERE YOU CAN FIND SOME OF MY WORK.
-              </p>
-            </div>
-            <img
-              class="hidden lg:block w-40 self-center align-bottom"
-              src="assets/big-logo-red.svg"
-              alt=""
-            />
-          </div>
-
-          <div class="w-2/5">
+          <div class="">
             <iframe
               class="my-5"
-              width="560"
+              width="760"
               height="315"
               src="https://www.youtube.com/embed/KnNs7HfTXf8?si=1bfhl62oKk1prdEt"
               title="YouTube video player"
@@ -270,7 +244,7 @@
 
             <iframe
               class="my-5"
-              width="560"
+              width="760"
               height="315"
               src="https://www.youtube.com/embed/izz2UQyBIAE?si=iDCh9aTziGePJRwl"
               title="YouTube video player"
@@ -281,7 +255,7 @@
 
             <iframe
               class="my-5"
-              width="560"
+              width="760"
               height="315"
               src="https://www.youtube.com/embed/Kol2i442CkI?si=vA3X3CbO94Uj5rmS"
               title="YouTube video player"
@@ -290,8 +264,26 @@
               allowfullscreen
             ></iframe>
           </div>
+           <div class="flex flex-col justify-between h-auto">
+            <img
+              class="hidden lg:block w-40 self-center align-bottom"
+              src="assets/big-logo-red.svg"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </main>
   </body>
+
+  <script>
+    const burgerIcon = document.querySelector(".bi-list");
+    const mobileMenu = document.querySelector("#mobile-menu");
+    window.addEventListener("scroll", () =>
+      document.querySelector("#mobile-menu").classList.add("menu-hidden")
+    );
+    burgerIcon.addEventListener("click", function () {
+      mobileMenu.classList.toggle("menu-hidden");
+    });
+  </script>
 </html>
