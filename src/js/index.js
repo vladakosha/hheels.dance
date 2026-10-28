@@ -70,3 +70,40 @@ if (flowerLayer) {
     flowerLayer.appendChild(flower);
   }
 }
+
+// Sign-up form: sends the filled-in details by e-mail or WhatsApp
+const signupForm = document.querySelector("#signup-form");
+
+if (signupForm) {
+  const classSelect = signupForm.elements["class"];
+  const preselected = new URLSearchParams(location.search).get("class");
+  if (preselected) classSelect.value = preselected;
+
+  const signupMessage = () => {
+    const f = signupForm.elements;
+    const chosen = classSelect.value
+      ? classSelect.options[classSelect.selectedIndex].text
+      : "-";
+    return {
+      subject: `HHeels: ${chosen}`,
+      body: `Name: ${f.name.value}\nContact: ${f.contact.value}\nClass: ${chosen}\n\n${f.message.value}`,
+    };
+  };
+
+  signupForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const { subject, body } = signupMessage();
+    location.href = `mailto:moin@hheels.dance?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  });
+
+  document.querySelector("#whatsapp-send").addEventListener("click", () => {
+    if (!signupForm.reportValidity()) return;
+    const { body } = signupMessage();
+    window.open(
+      `https://wa.me/4915259516681?text=${encodeURIComponent(body)}`,
+      "_blank"
+    );
+  });
+}

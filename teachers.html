@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Meet the HHeels choreographers." />
+    <meta name="description" content="Meet the HHeels team of choreographers." />
     <link rel="stylesheet" href="dist/style.css" />
     <script>document.documentElement.classList.add("js");</script>
-    <title>Choreographers | HHeels</title>
+    <title>Team | HHeels</title>
   </head>
   <body>
     <div id="flowers" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true"></div>
@@ -15,73 +15,82 @@
         <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+        <nav class="hidden items-center gap-8 whitespace-nowrap xl:flex" aria-label="Main">
           <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="classes.html">Classes</a>
-          <a class="nav-link nav-link-active" href="teachers.html" aria-current="page">Choreographers</a>
+          <a class="nav-link" href="classes.html">Classes &amp; Prices</a>
+          <a class="nav-link nav-link-active" href="teachers.html" aria-current="page">Team</a>
           <a class="nav-link" href="workshops.html">Workshops</a>
           <a class="nav-link" href="contact.html">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
-          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="contact.html#signup">Sign up</a>
+          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl xl:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
             <i class="bi bi-list"></i>
           </button>
         </div>
       </div>
-      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
+      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 xl:hidden" aria-label="Mobile">
         <div class="flex flex-col items-start">
           <a class="nav-link py-2 text-2xl" href="index.html">Home</a>
-          <a class="nav-link py-2 text-2xl" href="classes.html">Classes</a>
-          <a class="nav-link nav-link-active py-2 text-2xl" href="teachers.html" aria-current="page">Choreographers</a>
+          <a class="nav-link py-2 text-2xl" href="classes.html">Classes &amp; Prices</a>
+          <a class="nav-link nav-link-active py-2 text-2xl" href="teachers.html" aria-current="page">Team</a>
           <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
           <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
         </div>
-        <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+        <a class="btn btn-red mt-6 w-full" href="contact.html#signup">Sign up</a>
       </nav>
     </header>
 
     <main>
       <section class="section reveal pb-8 text-center md:pb-12">
-        <h1 class="page-title">Choreographers</h1>
+        <h1 class="page-title">Our team</h1>
+        <p class="mx-auto mt-6 max-w-2xl">The choreographers who teach at HHeels.</p>
       </section>
 
-      <section class="mx-auto max-w-6xl px-5 md:px-10">
-        <article class="reveal card grid md:grid-cols-2">
-          <img class="aspect-[4/5] w-full object-cover md:aspect-auto md:h-full" src="assets/teacher1.png" alt="Vlada Kosha" />
-          <div class="flex flex-col justify-center p-6 md:p-12">
-            <span class="tag self-start">Founder</span>
-            <h2 class="mt-3 text-3xl md:text-4xl">Vlada Kosha</h2>
-            <p class="mt-1 text-sm">High Heels &middot; Frame Up</p>
-            <p class="mt-6">Vlada is the founder and a choreographer of HHeels, where she teaches intermediate High Heels and Frame Up. She trained as a ballet dancer and as a choreographer, and has been teaching for about 17 years, the last 14 of them in High Heels.</p>
-            <blockquote class="mt-6 border-l-2 border-red pl-4 font-serif text-xl italic">"In my classes you'll find a calm but productive atmosphere. Teaching is my job, my hobby, my love and my passion."</blockquote>
-          </div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3 md:gap-x-8 lg:grid-cols-5">
-          <article class="reveal">
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/25 font-serif text-5xl text-nude">TR</div>
-            <h2 class="mt-4 text-xl">Tetiana Rabotynska</h2>
+      <section class="mx-auto max-w-6xl px-5 pb-16 md:px-10 md:pb-24">
+        <div class="grid items-start gap-6 md:grid-cols-2">
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <img class="h-32 w-28 shrink-0 object-cover md:h-40 md:w-32" src="assets/teacher1.png" alt="Vlada Kosha" loading="lazy" />
+            <div>
+              <h2 class="text-2xl">Vlada Kosha</h2>
+              <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-red">Founder &middot; High Heels Choreo &middot; Frame Up Choreo</p>
+              <p class="mt-1 text-sm">Ballet &middot; High Heels &middot; Frame Up</p>
+              <p class="mt-3 text-base">Trained as a ballet dancer and as a choreographer, Vlada has been teaching for about 17 years, the last 14 of them in High Heels. <em>"In my classes you'll find a calm but productive atmosphere. Teaching is my job, my hobby, my love and my passion."</em></p>
+            </div>
           </article>
-          <article class="reveal">
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/25 font-serif text-5xl text-nude">RE</div>
-            <h2 class="mt-4 text-xl">Ronja Effenberger</h2>
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-nude/25 font-serif text-3xl text-nude md:h-28 md:w-28">VO</div>
+            <div>
+              <h2 class="text-2xl">Vishana Odhiambo</h2>
+              <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-red">Choreo</p>
+              <p class="mt-1 text-sm">Ballet &middot; Vogue &middot; Contemporary</p>
+            </div>
           </article>
-          <article class="reveal">
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/25 font-serif text-5xl text-nude">LK</div>
-            <h2 class="mt-4 text-xl">Lucia Kehn</h2>
-            <p class="mt-1 text-sm">Contemporary &middot; Hip hop &middot; Popping</p>
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-nude/25 font-serif text-3xl text-nude md:h-28 md:w-28">LK</div>
+            <div>
+              <h2 class="text-2xl">Lucia Kehn</h2>
+              <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-red">Choreo</p>
+              <p class="mt-1 text-sm">Contemporary &middot; Hip hop &middot; Waving &middot; Popping</p>
+            </div>
           </article>
-          <article class="reveal">
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/25 font-serif text-5xl text-nude">VO</div>
-            <h2 class="mt-4 text-xl">Vishana Odhiambo</h2>
-            <p class="mt-1 text-sm">Ballet &middot; Vogue &middot; Contemporary</p>
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-nude/25 font-serif text-3xl text-nude md:h-28 md:w-28">TR</div>
+            <div>
+              <h2 class="text-2xl">Tetiana Rabotynska</h2>
+            </div>
           </article>
-          <article class="reveal">
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/25 font-serif text-5xl text-nude">SG</div>
-            <h2 class="mt-4 text-xl">Svetlana Gribova</h2>
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-nude/25 font-serif text-3xl text-nude md:h-28 md:w-28">RE</div>
+            <div>
+              <h2 class="text-2xl">Ronja Effenberger</h2>
+            </div>
+          </article>
+          <article class="reveal card flex items-start gap-5 p-5 md:gap-6 md:p-6">
+            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-nude/25 font-serif text-3xl text-nude md:h-28 md:w-28">SG</div>
+            <div>
+              <h2 class="text-2xl">Svetlana Gribova</h2>
+            </div>
           </article>
         </div>
       </section>

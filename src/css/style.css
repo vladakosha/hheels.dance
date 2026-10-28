@@ -93,6 +93,11 @@
     @apply text-red;
   }
 
+  /* Rounded form fields, as in the original contact form */
+  .field {
+    @apply block w-full rounded-3xl border border-dark-blue/40 bg-white/80 px-5 py-2.5 text-base placeholder:text-dark-blue/50 focus:border-red focus:outline-none;
+  }
+
   .tag {
     @apply rounded-full bg-light-blue/30 px-3 py-0.5 text-xs font-semibold uppercase tracking-wider;
   }

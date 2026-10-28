@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact HHeels dance studio in Hamburg: WhatsApp, Instagram, e-mail and address." />
+    <meta name="description" content="Sign up for a class or contact HHeels dance studio in Hamburg." />
     <link rel="stylesheet" href="dist/style.css" />
     <script>document.documentElement.classList.add("js");</script>
     <title>Contact | HHeels</title>
@@ -15,53 +15,70 @@
         <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+        <nav class="hidden items-center gap-8 whitespace-nowrap xl:flex" aria-label="Main">
           <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="classes.html">Classes</a>
-          <a class="nav-link" href="teachers.html">Choreographers</a>
+          <a class="nav-link" href="classes.html">Classes &amp; Prices</a>
+          <a class="nav-link" href="teachers.html">Team</a>
           <a class="nav-link" href="workshops.html">Workshops</a>
           <a class="nav-link nav-link-active" href="contact.html" aria-current="page">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
-          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="contact.html#signup">Sign up</a>
+          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl xl:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
             <i class="bi bi-list"></i>
           </button>
         </div>
       </div>
-      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
+      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 xl:hidden" aria-label="Mobile">
         <div class="flex flex-col items-start">
           <a class="nav-link py-2 text-2xl" href="index.html">Home</a>
-          <a class="nav-link py-2 text-2xl" href="classes.html">Classes</a>
-          <a class="nav-link py-2 text-2xl" href="teachers.html">Choreographers</a>
+          <a class="nav-link py-2 text-2xl" href="classes.html">Classes &amp; Prices</a>
+          <a class="nav-link py-2 text-2xl" href="teachers.html">Team</a>
           <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
           <a class="nav-link nav-link-active py-2 text-2xl" href="contact.html" aria-current="page">Contact</a>
         </div>
-        <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+        <a class="btn btn-red mt-6 w-full" href="contact.html#signup">Sign up</a>
       </nav>
     </header>
 
     <main>
-      <section class="section reveal pb-8 text-center md:pb-12">
-        <h1 class="page-title">Contact</h1>
-        <p class="mx-auto mt-6 max-w-2xl">Questions about classes, levels or what to wear? Message us, we're happy to help.</p>
+      <section id="signup" class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:px-10 md:py-20 lg:grid-cols-2">
+        <img class="reveal hidden w-full max-w-md lg:block" src="assets/logo-contact.svg" alt="" />
+        <div class="reveal">
+          <h1 class="page-title text-center">Contact us</h1>
+          <p class="mt-4 text-center">Sign up for a class or ask us anything.</p>
+          <form id="signup-form" class="mt-10 grid gap-5">
+            <label><span class="sr-only">Name</span><input class="field" type="text" name="name" required placeholder="NAME" /></label>
+            <label><span class="sr-only">E-mail or phone</span><input class="field" type="text" name="contact" required placeholder="E-MAIL OR PHONE" /></label>
+            <label><span class="sr-only">Class</span>
+              <select class="field" name="class">
+                <option value="">CHOOSE A CLASS</option><option value="technique">Technique</option><option value="high-heels-choreo">High Heels Choreo</option><option value="frame-up">Frame Up Choreo</option><option value="stretching">Stretching</option><option value="choreo">Choreo</option><option value="private">Private lesson</option><option value="workshop">Workshop</option><option value="other">Other</option>
+              </select>
+            </label>
+            <label><span class="sr-only">Message</span><textarea class="field" name="message" rows="4" maxlength="500" placeholder="YOUR MESSAGE"></textarea></label>
+            <button class="btn btn-red mx-auto mt-2 px-14 py-3 text-3xl" type="submit">Dance</button>
+            <button id="whatsapp-send" class="mx-auto text-base underline hover:text-red" type="button"><i class="bi bi-whatsapp"></i> or send it via WhatsApp</button>
+          </form>
+        </div>
       </section>
 
-      <section class="mx-auto grid max-w-6xl gap-10 px-5 pb-16 md:grid-cols-2 md:gap-16 md:px-10 md:pb-24">
-        <div class="reveal card p-6 md:p-10">
-          <h2 class="text-2xl">Write to us</h2>
-          <div class="mt-6 flex flex-col gap-3">
-            <a class="btn btn-red" href="https://api.whatsapp.com/send?phone=4915259516681" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-            <a class="btn btn-outline" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
-            <a class="btn btn-outline" href="mailto:moin@hheels.dance"><i class="bi bi-envelope"></i> moin@hheels.dance</a>
+      <section class="bg-nude/10">
+        <div class="section reveal grid gap-10 md:grid-cols-2 md:gap-16">
+          <div>
+            <h2 class="text-3xl">Find us</h2>
+            <address class="mt-4 not-italic">
+              <p class="font-semibold">Wiese</p>
+              <p>Wiesendamm 24, 22305 Hamburg</p>
+              <p class="mt-2"><a class="hover:text-red" href="mailto:moin@hheels.dance">moin@hheels.dance</a></p>
+            </address>
+            <div class="mt-6 flex gap-5 text-3xl">
+              <a class="hover:text-red" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a class="hover:text-red" href="https://api.whatsapp.com/send?phone=4915259516681" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a class="hover:text-red" href="https://www.youtube.com/@VladaKosha" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
           </div>
-          <h2 class="mt-10 text-2xl">Studio</h2>
-          <address class="mt-3 not-italic">
-            <p class="font-semibold">Wiese</p>
-            <p>Wiesendamm 24, 22305 Hamburg</p>
-          </address>
+          <iframe class="aspect-video w-full" title="Map: Wiesendamm 24, Hamburg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.879268442346!2d10.03831676783386!3d53.58760215648656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18939dc21a827%3A0x324ad128ed0c7f6f!2sWiesendamm%2024%2C%2022305%20Hamburg%2C%20Germany!5e0!3m2!1sen!2spl!4v1700055053720!5m2!1sen!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <iframe class="reveal aspect-square w-full md:aspect-auto md:h-full md:min-h-[28rem]" title="Map: Wiesendamm 24, Hamburg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.879268442346!2d10.03831676783386!3d53.58760215648656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18939dc21a827%3A0x324ad128ed0c7f6f!2sWiesendamm%2024%2C%2022305%20Hamburg%2C%20Germany!5e0!3m2!1sen!2spl!4v1700055053720!5m2!1sen!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 

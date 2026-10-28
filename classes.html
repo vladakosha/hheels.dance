@@ -15,39 +15,44 @@
         <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+        <nav class="hidden items-center gap-8 whitespace-nowrap xl:flex" aria-label="Main">
           <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link nav-link-active" href="classes.html" aria-current="page">Classes</a>
-          <a class="nav-link" href="teachers.html">Choreographers</a>
+          <a class="nav-link nav-link-active" href="classes.html" aria-current="page">Classes &amp; Prices</a>
+          <a class="nav-link" href="teachers.html">Team</a>
           <a class="nav-link" href="workshops.html">Workshops</a>
           <a class="nav-link" href="contact.html">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
-          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="contact.html#signup">Sign up</a>
+          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl xl:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
             <i class="bi bi-list"></i>
           </button>
         </div>
       </div>
-      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
+      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 xl:hidden" aria-label="Mobile">
         <div class="flex flex-col items-start">
           <a class="nav-link py-2 text-2xl" href="index.html">Home</a>
-          <a class="nav-link nav-link-active py-2 text-2xl" href="classes.html" aria-current="page">Classes</a>
-          <a class="nav-link py-2 text-2xl" href="teachers.html">Choreographers</a>
+          <a class="nav-link nav-link-active py-2 text-2xl" href="classes.html" aria-current="page">Classes &amp; Prices</a>
+          <a class="nav-link py-2 text-2xl" href="teachers.html">Team</a>
           <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
           <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
         </div>
-        <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+        <a class="btn btn-red mt-6 w-full" href="contact.html#signup">Sign up</a>
       </nav>
     </header>
 
     <main>
       <section class="section reveal pb-8 text-center md:pb-12">
-        <h1 class="page-title">Classes</h1>
-        <p class="mx-auto mt-6 max-w-2xl">From your very first steps in heels to Frame Up floor work. Pick a class and book it directly.</p>
+        <h1 class="page-title">Classes &amp; Prices</h1>
+        <p class="mx-auto mt-6 max-w-2xl">From your very first steps in heels to Frame Up floor work.</p>
       </section>
 
-      <section class="mx-auto max-w-6xl px-5 pb-16 md:px-10 md:pb-24">
+      <nav class="-mt-2 mb-12 flex justify-center gap-3 px-5 md:-mt-6" aria-label="On this page">
+        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#all-classes">Classes</a>
+        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#schedule">Schedule</a>
+        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#prices">Prices</a>
+      </nav>
+      <section id="all-classes" class="mx-auto max-w-6xl px-5 pb-16 md:px-10 md:pb-24">
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <article id="technique" class="reveal card flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/classes-beginners.png" alt="Crossed legs in black high heels" loading="lazy" /></div>
@@ -55,7 +60,7 @@
               <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">All levels</span></div>
               <h2 class="mt-3 text-2xl">Technique</h2>
               <p class="mt-2 flex-1 text-base">Stretching, physique training, high heels technique and Frame Up fundamentals in one class. The exercises get harder as you progress: the foundation every heels dancer needs.</p>
-              <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
+              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=technique#signup">Join</a>
             </div>
           </article>
           <article id="high-heels-choreo" class="reveal card flex flex-col">
@@ -63,8 +68,9 @@
             <div class="flex flex-1 flex-col p-5">
               <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span></div>
               <h2 class="mt-3 text-2xl">High Heels Choreo</h2>
+              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
               <p class="mt-2 flex-1 text-base">Elegant choreography with the fierce confidence of stilettos. Build coordination, musicality and self-assurance, on and off the dance floor.</p>
-              <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
+              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=high-heels-choreo#signup">Join</a>
             </div>
           </article>
           <article id="frame-up" class="reveal card flex flex-col">
@@ -72,8 +78,9 @@
             <div class="flex flex-1 flex-col p-5">
               <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span></div>
               <h2 class="mt-3 text-2xl">Frame Up Choreo</h2>
+              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
               <p class="mt-2 flex-1 text-base">Frame Up Strip blends high heels, breakdance and strip-plastic. Precise floor work, flexibility, core strength and musicality. Proper footwear required.</p>
-              <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
+              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=frame-up#signup">Join</a>
             </div>
           </article>
           <article id="stretching" class="reveal card flex flex-col">
@@ -82,7 +89,7 @@
               <div class="flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">All levels</span></div>
               <h2 class="mt-3 text-2xl">Stretching</h2>
               <p class="mt-2 flex-1 text-base">Dynamic and static stretching for flexibility, better posture and injury prevention. More fluid movement for every dancer.</p>
-              <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
+              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=stretching#signup">Join</a>
             </div>
           </article>
           <article id="choreo" class="reveal card flex flex-col">
@@ -90,8 +97,9 @@
             <div class="flex flex-1 flex-col p-5">
               <div class="flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">Open level</span></div>
               <h2 class="mt-3 text-2xl">Choreo</h2>
-              <p class="mt-2 flex-1 text-base">With Vishana (ballet, vogue, contemporary) and Lucia (contemporary, hip hop, waving, popping): classical elegance meets street style, taught with calm and precision.</p>
-              <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
+              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vishana Odhiambo &amp; Lucia Kehn</a></p>
+              <p class="mt-2 flex-1 text-base">Ballet, vogue and contemporary meet hip hop, waving and popping: classical elegance meets street style, taught with calm and precision.</p>
+              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=choreo#signup">Join</a>
             </div>
           </article>
         </div>
@@ -100,7 +108,7 @@
       <section id="schedule" class="section reveal">
         <h2 class="section-title text-red">Schedule</h2>
         <div class="min-h-[20rem] bg-white" data-eversports-widget-id="9395c510-4511-42d3-9338-9d24b0d9029b"></div>
-        <p class="mt-6 text-base">Schedule not showing? <a class="font-semibold text-red underline" href="https://www.eversports.de/widget/w/0b1TJe?list=class" target="_blank" rel="noopener">Open it on Eversports</a></p>
+        <p class="mt-6 text-base">Book online through Eversports, or <a class="font-semibold text-red underline" href="contact.html#signup">sign up with us directly</a>.</p>
       </section>
 
       <section id="prices" class="section reveal">
