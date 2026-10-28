@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Workshops, private lessons and guest workshops with Vlada Kosha." />
     <link rel="stylesheet" href="dist/style.css" />
+    <script>document.documentElement.classList.add("js");</script>
     <title>Workshops | HHeels</title>
   </head>
   <body>
+    <div id="flowers" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true"></div>
     <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
       <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
         <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-6 lg:flex" aria-label="Main">
-          <a class="nav-link" href="index.html#about">About</a>
-          <a class="nav-link" href="index.html#classes">Classes</a>
-          <a class="nav-link" href="index.html#schedule">Schedule</a>
-          <a class="nav-link" href="index.html#team">Team</a>
-          <a class="nav-link" href="index.html#gallery">Gallery</a>
-          <a class="nav-link text-red" href="workshops.html">Workshops</a>
-          <a class="nav-link" href="index.html#contact">Contact</a>
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="classes.html">Classes</a>
+          <a class="nav-link" href="teachers.html">Choreographers</a>
+          <a class="nav-link nav-link-active" href="workshops.html" aria-current="page">Workshops</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
           <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
@@ -30,24 +30,25 @@
         </div>
       </div>
       <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
-        <div class="flex flex-col">
-        <a class="nav-link py-2 text-2xl" href="index.html#about">About</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#classes">Classes</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#schedule">Schedule</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#team">Team</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#gallery">Gallery</a>
-        <a class="nav-link py-2 text-2xl text-red" href="workshops.html">Workshops</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#contact">Contact</a>
+        <div class="flex flex-col items-start">
+          <a class="nav-link py-2 text-2xl" href="index.html">Home</a>
+          <a class="nav-link py-2 text-2xl" href="classes.html">Classes</a>
+          <a class="nav-link py-2 text-2xl" href="teachers.html">Choreographers</a>
+          <a class="nav-link nav-link-active py-2 text-2xl" href="workshops.html" aria-current="page">Workshops</a>
+          <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
         </div>
         <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
       </nav>
     </header>
 
     <main>
-      <section class="section text-center">
-        <h1 class="text-5xl text-red md:text-7xl">Workshops</h1>
-        <p class="mx-auto mt-8 max-w-2xl">Here you'll find the latest workshops. I only invite choreographers I'm 100% confident in, who teach styles different from everyone else, so you can get inspired, find something new for your dance and reach the next level.</p>
-        <div class="mx-auto mt-12 max-w-2xl border border-dark-blue/20 p-8">
+      <section class="section reveal pb-8 text-center md:pb-12">
+        <h1 class="page-title">Workshops</h1>
+        <p class="mx-auto mt-6 max-w-2xl">Here you'll find the latest workshops. I only invite choreographers I'm 100% confident in, who teach styles different from everyone else, so you can get inspired, find something new for your dance and reach the next level.</p>
+      </section>
+
+      <section class="mx-auto max-w-2xl px-5 pb-16 text-center md:pb-24">
+        <div class="reveal card p-8">
           <h2 class="text-2xl">Upcoming</h2>
           <!-- TODO: add workshops here: date, choreographer, style, price, booking link -->
           <p class="mt-3 text-base">No dates announced right now. Follow us on Instagram to hear about new workshops first.</p>
@@ -56,7 +57,7 @@
       </section>
 
       <section class="bg-nude/10">
-        <div class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div class="section reveal grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <img class="mx-auto w-full max-w-sm" src="assets/flowers.webp" alt="White flowers on a light background" loading="lazy" />
           <div>
             <h2 class="section-title text-red">Private lessons</h2>
@@ -66,7 +67,7 @@
         </div>
       </section>
 
-      <section class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+      <section class="section reveal grid items-center gap-10 md:grid-cols-2 md:gap-16">
         <div class="md:order-2">
           <img class="mx-auto w-full max-w-sm" src="assets/frame-up.webp" alt="Dancer in black on the floor in platform heels" loading="lazy" />
         </div>

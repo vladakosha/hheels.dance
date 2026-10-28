@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="High heels, Frame Up, stretching and choreo classes in Hamburg. Book your class with HHeels." />
     <link rel="stylesheet" href="dist/style.css" />
+    <script>document.documentElement.classList.add("js");</script>
     <title>HHeels | High heels dance studio in Hamburg</title>
   </head>
   <body>
+    <div id="flowers" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true"></div>
     <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
       <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
-        <a href="#top" aria-label="HHeels home">
+        <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-6 lg:flex" aria-label="Main">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#classes">Classes</a>
-          <a class="nav-link" href="#schedule">Schedule</a>
-          <a class="nav-link" href="#team">Team</a>
-          <a class="nav-link" href="#gallery">Gallery</a>
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+          <a class="nav-link nav-link-active" href="index.html" aria-current="page">Home</a>
+          <a class="nav-link" href="classes.html">Classes</a>
+          <a class="nav-link" href="teachers.html">Choreographers</a>
           <a class="nav-link" href="workshops.html">Workshops</a>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
           <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
@@ -30,35 +30,33 @@
         </div>
       </div>
       <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
-        <div class="flex flex-col">
-        <a class="nav-link py-2 text-2xl" href="#about">About</a>
-        <a class="nav-link py-2 text-2xl" href="#classes">Classes</a>
-        <a class="nav-link py-2 text-2xl" href="#schedule">Schedule</a>
-        <a class="nav-link py-2 text-2xl" href="#team">Team</a>
-        <a class="nav-link py-2 text-2xl" href="#gallery">Gallery</a>
-        <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
-        <a class="nav-link py-2 text-2xl" href="#contact">Contact</a>
+        <div class="flex flex-col items-start">
+          <a class="nav-link nav-link-active py-2 text-2xl" href="index.html" aria-current="page">Home</a>
+          <a class="nav-link py-2 text-2xl" href="classes.html">Classes</a>
+          <a class="nav-link py-2 text-2xl" href="teachers.html">Choreographers</a>
+          <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
+          <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
         </div>
         <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main>
       <section class="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden md:min-h-[calc(100svh-5rem)]">
         <img class="absolute inset-0 h-full w-full object-cover object-[70%_center]" src="assets/hero-img.webp" alt="Dancer in black platform heels" />
         <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent md:from-white/60"></div>
         <div class="relative mx-auto w-full max-w-6xl px-5 py-16 md:px-10">
-          <img class="w-64 md:w-[30rem]" src="assets/big-logo-blue.svg" alt="HHeels" />
-          <p class="mt-6 font-serif text-2xl font-bold uppercase md:ml-24 md:text-3xl">I feel like<br />dancing here&hellip;</p>
-          <p class="mt-4 max-w-sm md:ml-24">High heels dance studio in Hamburg</p>
-          <div class="mt-8 flex flex-wrap gap-3 md:ml-24">
+          <img class="hero-in w-64 md:w-[30rem]" src="assets/big-logo-blue.svg" alt="HHeels" />
+          <p class="hero-in mt-6 font-serif text-2xl font-bold uppercase [animation-delay:150ms] md:ml-24 md:text-3xl">I feel like<br />dancing here&hellip;</p>
+          <p class="hero-in mt-4 max-w-sm [animation-delay:300ms] md:ml-24">High heels dance studio in Hamburg</p>
+          <div class="hero-in mt-8 flex flex-wrap gap-3 [animation-delay:450ms] md:ml-24">
             <a class="btn btn-red" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
-            <a class="btn btn-outline bg-white/60" href="#schedule">See schedule</a>
+            <a class="btn btn-outline bg-white/60" href="classes.html#schedule">See schedule</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+      <section class="section reveal grid items-center gap-10 md:grid-cols-2 md:gap-16">
         <div>
           <h2 class="section-title text-red">About HHeels</h2>
           <p>Our studio was born from a <em>passion</em> for high heels dance. With over a decade of experience, we push boundaries and work to elevate high heels as a professional dance style through technique-focused classes.</p>
@@ -67,122 +65,58 @@
         <img class="mx-auto w-full max-w-sm md:max-w-none" src="assets/about.webp" alt="Silhouette of feet in heels on a sunlit floor" loading="lazy" />
       </section>
 
-      <section id="classes" class="bg-light-blue/20">
-        <div class="section">
-          <h2 class="section-title">Classes</h2>
-          <div class="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="flex flex-col">
-            <img class="aspect-[4/5] w-full object-cover" src="assets/classes-beginners.png" alt="Crossed legs in black high heels" loading="lazy" />
-            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">All levels</span></div>
-            <h3 class="mt-3 text-2xl">Technique</h3>
-            <p class="mt-2 flex-1 text-base">Stretching, physique training, high heels technique and Frame Up fundamentals in one class. The exercises get harder as you progress: the foundation every heels dancer needs.</p>
-            <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
-          </article>
-          <article class="flex flex-col">
-            <img class="aspect-[4/5] w-full object-cover" src="assets/classes-choreo.png" alt="Foot in a high heel shoe" loading="lazy" />
-            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span></div>
-            <h3 class="mt-3 text-2xl">High Heels Choreo</h3>
-            <p class="mt-2 flex-1 text-base">Elegant choreography with the fierce confidence of stilettos. Build coordination, musicality and self-assurance, on and off the dance floor.</p>
-            <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
-          </article>
-          <article class="flex flex-col">
-            <img class="aspect-[4/5] w-full object-cover" src="assets/classes-frameup.png" alt="Dancer crouching in heels" loading="lazy" />
-            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span></div>
-            <h3 class="mt-3 text-2xl">Frame Up Choreo</h3>
-            <p class="mt-2 flex-1 text-base">Frame Up Strip blends high heels, breakdance and strip-plastic. Precise floor work, flexibility, core strength and musicality. Proper footwear required.</p>
-            <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
-          </article>
-          <article class="flex flex-col">
-            <img class="aspect-[4/5] w-full object-cover" src="assets/classes-technique.png" alt="Crossed hands and wrists" loading="lazy" />
-            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">All levels</span></div>
-            <h3 class="mt-3 text-2xl">Stretching</h3>
-            <p class="mt-2 flex-1 text-base">Dynamic and static stretching for flexibility, better posture and injury prevention. More fluid movement for every dancer.</p>
-            <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
-          </article>
-          <article class="flex flex-col">
-            <img class="aspect-[4/5] w-full object-cover" src="assets/teacher1.png" alt="Dancer in sneakers bending backwards" loading="lazy" />
-            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">Open level</span></div>
-            <h3 class="mt-3 text-2xl">Choreo</h3>
-            <p class="mt-2 flex-1 text-base">With Vishana (ballet, vogue, contemporary) and Lucia (contemporary, hip hop, waving, popping): classical elegance meets street style, taught with calm and precision.</p>
-            <a class="btn btn-outline mt-5 self-start" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Join</a>
-          </article>
-          </div>
+      <section class="section reveal">
+        <h2 class="section-title">Our classes</h2>
+        <div class="border-t border-dark-blue/15">
+            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/15 py-5" href="classes.html#technique">
+              <span class="font-serif text-2xl font-bold uppercase tracking-tight group-hover:text-red md:text-3xl">Technique</span>
+              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">All levels</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/15 py-5" href="classes.html#high-heels-choreo">
+              <span class="font-serif text-2xl font-bold uppercase tracking-tight group-hover:text-red md:text-3xl">High Heels Choreo</span>
+              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/15 py-5" href="classes.html#frame-up">
+              <span class="font-serif text-2xl font-bold uppercase tracking-tight group-hover:text-red md:text-3xl">Frame Up Choreo</span>
+              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/15 py-5" href="classes.html#stretching">
+              <span class="font-serif text-2xl font-bold uppercase tracking-tight group-hover:text-red md:text-3xl">Stretching</span>
+              <span class="flex items-center gap-2"><span class="tag">No heels</span><span class="tag">All levels</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/15 py-5" href="classes.html#choreo">
+              <span class="font-serif text-2xl font-bold uppercase tracking-tight group-hover:text-red md:text-3xl">Choreo</span>
+              <span class="flex items-center gap-2"><span class="tag">No heels</span><span class="tag">Open level</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
+            </a>
         </div>
+        <a class="btn btn-outline mt-10" href="classes.html">All classes &amp; schedule</a>
       </section>
 
-      <section id="schedule" class="section">
-        <h2 class="section-title text-red">Schedule</h2>
-        <p class="-mt-6 mb-8 md:-mt-8">Pick a class and book directly. First time with us? Choose any class marked for your level.</p>
-        <iframe class="h-[800px] w-full" src="https://www.eversports.de/widget/w/0b1TJe?list=class" title="HHeels class schedule on Eversports" loading="lazy"></iframe>
-      </section>
-
-      <section id="team" class="bg-nude/10">
-        <div class="section">
-          <h2 class="section-title">Choreographers</h2>
-          <div class="grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3 md:gap-x-8">
-          <article>
-            <img class="aspect-[4/5] w-full object-cover" src="assets/teacher1.png" alt="Vlada Kosha" loading="lazy" />
-            <h3 class="mt-4 text-xl">Vlada Kosha</h3>
-            <p class="mt-1 text-sm">Founder &middot; High Heels &middot; Frame Up</p>
-            <details class="mt-3 text-base">
-              <summary class="cursor-pointer font-semibold text-red">Read more</summary>
-              <div class="mt-2">
-                <p>Vlada is the founder and a choreographer of HHeels, where she teaches intermediate High Heels and Frame Up. She trained as a ballet dancer and as a choreographer, and has been teaching for about 17 years, the last 14 of them in High Heels.</p>
-                <p class="mt-2 italic">"In my classes you'll find a calm but productive atmosphere. Teaching is my job, my hobby, my love and my passion, so I'm always happy to share my knowledge with you!"</p>
-              </div>
-            </details>
-          </article>
-          <article>
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/30 font-serif text-6xl text-nude">TR</div>
-            <h3 class="mt-4 text-xl">Tetiana Rabotynska</h3>
-          </article>
-          <article>
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/30 font-serif text-6xl text-nude">RE</div>
-            <h3 class="mt-4 text-xl">Ronja Effenberger</h3>
-          </article>
-          <article>
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/30 font-serif text-6xl text-nude">LK</div>
-            <h3 class="mt-4 text-xl">Lucia Kehn</h3>
-            <p class="mt-1 text-sm">Contemporary &middot; Hip hop &middot; Popping</p>
-          </article>
-          <article>
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/30 font-serif text-6xl text-nude">VO</div>
-            <h3 class="mt-4 text-xl">Vishana Odhiambo</h3>
-            <p class="mt-1 text-sm">Ballet &middot; Vogue &middot; Contemporary</p>
-          </article>
-          <article>
-            <div class="flex aspect-[4/5] w-full items-center justify-center bg-nude/30 font-serif text-6xl text-nude">SG</div>
-            <h3 class="mt-4 text-xl">Svetlana Gribova</h3>
-          </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery" class="bg-dark-blue text-nude">
-        <div class="section">
+      <section class="bg-dark-blue text-nude">
+        <div class="section reveal">
           <h2 class="section-title">Gallery</h2>
           <div class="-mx-5 flex snap-x gap-4 overflow-x-auto px-5 pb-4 md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0">
           <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden rounded-2xl md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
             <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/frame-up.webp" alt="" loading="lazy" />
+            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/frame-up.webp" alt="" loading="lazy" />
             <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
             <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
           </a>
           <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden rounded-2xl md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
             <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/classes-choreo.png" alt="" loading="lazy" />
+            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/classes-choreo.png" alt="" loading="lazy" />
             <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
             <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
           </a>
           <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden rounded-2xl md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
             <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/about.webp" alt="" loading="lazy" />
+            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/about.webp" alt="" loading="lazy" />
             <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
             <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
           </a>
           <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden rounded-2xl md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
             <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/classes-frameup.png" alt="" loading="lazy" />
+            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/classes-frameup.png" alt="" loading="lazy" />
             <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
             <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
           </a>
@@ -191,21 +125,13 @@
         </div>
       </section>
 
-      <section id="contact" class="section grid gap-10 md:grid-cols-2 md:gap-16">
-        <div>
-          <h2 class="section-title text-red">Contact</h2>
-          <p>Questions about classes, levels or what to wear? Message us, we're happy to help.</p>
-          <address class="mt-6 not-italic">
-            <p class="font-semibold">Wiese</p>
-            <p>Wiesendamm 24, 22305 Hamburg</p>
-          </address>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a class="btn btn-red" href="https://api.whatsapp.com/send?phone=4915259516681" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-            <a class="btn btn-outline" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
-            <a class="btn btn-outline" href="mailto:moin@hheels.dance"><i class="bi bi-envelope"></i> E-mail</a>
-          </div>
+      <section class="section reveal text-center">
+        <h2 class="section-title text-red">Ready to dance?</h2>
+        <p class="-mt-4 md:-mt-6">Your first step into heels starts with one class.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a class="btn btn-red" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+          <a class="btn btn-outline" href="contact.html">Ask a question</a>
         </div>
-        <iframe class="aspect-square w-full md:aspect-auto md:h-full md:min-h-[24rem]" title="Map: Wiesendamm 24, Hamburg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.879268442346!2d10.03831676783386!3d53.58760215648656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18939dc21a827%3A0x324ad128ed0c7f6f!2sWiesendamm%2024%2C%2022305%20Hamburg%2C%20Germany!5e0!3m2!1sen!2spl!4v1700055053720!5m2!1sen!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 

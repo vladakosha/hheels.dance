@@ -67,11 +67,106 @@
     @apply border-nude text-nude hover:bg-nude hover:text-dark-blue;
   }
 
+  .page-title {
+    @apply break-words text-4xl text-red sm:text-5xl md:text-7xl;
+  }
+
+  .card {
+    @apply overflow-hidden bg-white/80 shadow-[0_10px_40px_-15px_rgba(45,51,62,0.25)] backdrop-blur-sm;
+  }
+
   .nav-link {
-    @apply font-serif text-base font-bold uppercase tracking-wide hover:text-red;
+    @apply relative font-serif text-base font-bold uppercase tracking-wide transition-colors hover:text-red;
+  }
+
+  /* Underline that grows on hover and stays on the current page */
+  .nav-link::after {
+    @apply absolute -bottom-1 left-0 h-0.5 w-full origin-left scale-x-0 bg-red transition-transform duration-300 content-[''];
+  }
+
+  .nav-link:hover::after,
+  .nav-link-active::after {
+    @apply scale-x-100;
+  }
+
+  .nav-link-active {
+    @apply text-red;
   }
 
   .tag {
     @apply rounded-full bg-light-blue/30 px-3 py-0.5 text-xs font-semibold uppercase tracking-wider;
+  }
+}
+
+/* Sections fade in as they scroll into view (only when JS runs) */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-in {
+  animation: hero-in 1s ease both;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Flowers drifting up the page background, created in src/js/index.js */
+.flower {
+  position: absolute;
+  top: 100%;
+  animation: flower-rise var(--duration) linear var(--delay) infinite;
+}
+
+.flower svg {
+  width: 100%;
+  height: 100%;
+  animation: flower-sway 7s ease-in-out infinite alternate;
+}
+
+@keyframes flower-rise {
+  to {
+    transform: translate3d(var(--drift), -125vh, 0) rotate(var(--spin));
+  }
+}
+
+@keyframes flower-sway {
+  from {
+    transform: translateX(-18px) rotate(-8deg);
+  }
+  to {
+    transform: translateX(18px) rotate(8deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .flower,
+  .flower svg,
+  .hero-in {
+    animation: none;
+  }
+
+  .flower {
+    top: var(--still-top);
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

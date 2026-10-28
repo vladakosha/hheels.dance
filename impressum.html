@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Impressum" />
     <link rel="stylesheet" href="dist/style.css" />
+    <script>document.documentElement.classList.add("js");</script>
     <title>Impressum | HHeels</title>
   </head>
   <body>
+    <div id="flowers" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true"></div>
     <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
       <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
         <a href="index.html" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
-        <nav class="hidden items-center gap-6 lg:flex" aria-label="Main">
-          <a class="nav-link" href="index.html#about">About</a>
-          <a class="nav-link" href="index.html#classes">Classes</a>
-          <a class="nav-link" href="index.html#schedule">Schedule</a>
-          <a class="nav-link" href="index.html#team">Team</a>
-          <a class="nav-link" href="index.html#gallery">Gallery</a>
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Main">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="classes.html">Classes</a>
+          <a class="nav-link" href="teachers.html">Choreographers</a>
           <a class="nav-link" href="workshops.html">Workshops</a>
-          <a class="nav-link" href="index.html#contact">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
           <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
@@ -30,21 +30,19 @@
         </div>
       </div>
       <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
-        <div class="flex flex-col">
-        <a class="nav-link py-2 text-2xl" href="index.html#about">About</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#classes">Classes</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#schedule">Schedule</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#team">Team</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#gallery">Gallery</a>
-        <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
-        <a class="nav-link py-2 text-2xl" href="index.html#contact">Contact</a>
+        <div class="flex flex-col items-start">
+          <a class="nav-link py-2 text-2xl" href="index.html">Home</a>
+          <a class="nav-link py-2 text-2xl" href="classes.html">Classes</a>
+          <a class="nav-link py-2 text-2xl" href="teachers.html">Choreographers</a>
+          <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
+          <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
         </div>
         <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
       </nav>
     </header>
 
     <main class="section min-h-[50vh]">
-      <h1 class="text-4xl md:text-5xl">Impressum</h1>
+      <h1 class="page-title">Impressum</h1>
       <!-- TODO: add the legal text (required for German websites) -->
       <p class="mt-6">Coming soon.</p>
     </main>
