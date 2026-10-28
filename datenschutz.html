@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Datenschutz" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Datenschutz | HHeels</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
+        <a href="index.html" aria-label="HHeels home">
+          <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
+        </a>
+        <nav class="hidden items-center gap-6 lg:flex" aria-label="Main">
+          <a class="nav-link" href="index.html#about">About</a>
+          <a class="nav-link" href="index.html#classes">Classes</a>
+          <a class="nav-link" href="index.html#schedule">Schedule</a>
+          <a class="nav-link" href="index.html#team">Team</a>
+          <a class="nav-link" href="index.html#gallery">Gallery</a>
+          <a class="nav-link" href="workshops.html">Workshops</a>
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
+        <div class="flex flex-col">
+        <a class="nav-link py-2 text-2xl" href="index.html#about">About</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#classes">Classes</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#schedule">Schedule</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#team">Team</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#gallery">Gallery</a>
+        <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#contact">Contact</a>
+        </div>
+        <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+      </nav>
+    </header>
+
+    <main class="section min-h-[50vh]">
+      <h1 class="text-4xl md:text-5xl">Datenschutz</h1>
+      <!-- TODO: add the legal text (required for German websites) -->
+      <p class="mt-6">Coming soon.</p>
+    </main>
+
+    <footer class="bg-dark-blue text-nude">
+      <div class="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-14 md:flex-row md:items-start md:justify-between md:px-10">
+        <div>
+          <img class="h-14" src="assets/big-logo-nude.svg" alt="HHeels" />
+          <p class="mt-4 text-sm">High heels dance studio in Hamburg</p>
+        </div>
+        <address class="text-sm not-italic">
+          <p class="font-serif text-base font-bold uppercase tracking-wide">Studio</p>
+          <p>Wiese, Wiesendamm 24</p>
+          <p>22305 Hamburg</p>
+          <p class="mt-2"><a class="hover:text-white" href="mailto:moin@hheels.dance">moin@hheels.dance</a></p>
+        </address>
+        <div class="text-sm">
+          <p class="font-serif text-base font-bold uppercase tracking-wide">Follow</p>
+          <div class="mt-2 flex gap-4 text-2xl">
+            <a class="hover:text-white" href="https://www.instagram.com/hheels.dance/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="hover:text-white" href="https://api.whatsapp.com/send?phone=4915259516681" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a class="hover:text-white" href="https://www.youtube.com/@VladaKosha" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a class="hover:text-white" href="mailto:moin@hheels.dance" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-nude/20">
+        <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-5 py-5 text-xs md:px-10">
+          <p>&copy; 2026 HHeels</p>
+          <div class="flex gap-6">
+            <a class="hover:text-white" href="impressum.html">Impressum</a>
+            <a class="hover:text-white" href="datenschutz.html">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

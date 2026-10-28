@@ -3,121 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Workshops, private lessons and guest workshops with Vlada Kosha." />
     <link rel="stylesheet" href="dist/style.css" />
-    <title>workshops</title>
+    <title>Workshops | HHeels</title>
   </head>
   <body>
-    <nav>
-      <ul
-        class="hidden text-dark-blue font-bold text-3xl md:flex justify-around py-20 tracking-tight"
-      >
-        <li class="hover:text-red"><a href="index.html">HOME</a></li>
-        <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
-        <li class="hover:text-red">
-          <a href="teachers.html">CHOREOGRAPHERS</a>
-        </li>
-        <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
-        <li id="contact" class="hover:text-red">
-          <a href="./contact.html">CONTACTS</a>
-        </li>
-      </ul>
-    </nav>
-
-    <nav class="md:hidden">
-      <i class="px-10 bi bi-list text-5xl text-dark-blue"></i>
-      <ul
-        id="mobile-menu"
-        class="fixed px-10 text-dark-blue font-bold text-3xl justify-around py-20 tracking-tight expose-menu"
-      >
-        <li class="hover:text-red"><a href="index.html">HOME</a></li>
-        <li class="hover:text-red"><a href="classes.html">CLASSES</a></li>
-        <li class="hover:text-red">
-          <a href="teachers.html">CHOREOGRAPHERS</a>
-        </li>
-        <li class="hover:text-red"><a href="workshops.html">WORKSHOPS</a></li>
-        <li id="contact" class="hover:text-red">
-          <a href="./contact.html">CONTACTS</a>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="workshops">
-      <h1 class="text-red font-bold text-8xl text-center tracking-tight py-10">
-        WORKSHOPS
-      </h1>
-
-      <div class="px-28 py-10">
-        <div class="flex flex-col text-center lg:mx-60">
-          <p class="text 2xl text-dark-blue mb-10">
-            HERE YOU CAN FIND THE LATEST INFORMATION ABOUT WORKSHOPS. I ALWAYS
-            INVITE CHOREOGRAPHERS WITH WHOM I AM 100 % CONFIDENT AND WHO TEACH
-            STYLES THAT ARE DIFFERENT FROM OTHERS. THIS WAY, YOU CAN GET
-            INSPIRED AND FIND SOMETHING NEW FOR YOURSELF — SOMETHING TO
-            INCORPORATE INTO YOUR DANCE AND REACH A NEW LEVEL.
-          </p>
-          <a
-            class="join text-center py-2 w-fit border-dark-blue text-dark-blue place-self-center font-bold text-4xl hover:text-white hover:bg-dark-blue"
-            href=""
-          >
-            JOIN
-          </a>
+    <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
+        <a href="index.html" aria-label="HHeels home">
+          <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
+        </a>
+        <nav class="hidden items-center gap-6 lg:flex" aria-label="Main">
+          <a class="nav-link" href="index.html#about">About</a>
+          <a class="nav-link" href="index.html#classes">Classes</a>
+          <a class="nav-link" href="index.html#schedule">Schedule</a>
+          <a class="nav-link" href="index.html#team">Team</a>
+          <a class="nav-link" href="index.html#gallery">Gallery</a>
+          <a class="nav-link text-red" href="workshops.html">Workshops</a>
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+          <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+            <i class="bi bi-list"></i>
+          </button>
         </div>
       </div>
-    </section>
-
-    <section class="px-28 private">
-      <div class="container flex justify-between items-center my-40">
-        <div class="w-2/5 flex flex-col">
-          <p class="text-center pb-20 text-dark-blue text-2xl">
-            <i>PRIVATE LESSONS</i> ARE IMPORTANT TO GET TO THE NEXT LEVEL FASTER
-            OR TO PREPARE FOR A SPECIFIC PROJECT. WHETHER IT IS A VIDEO SHOOT,
-            SOMETHING FOR YOUR PORTFOLIO, A CASTING, OR ANYTHING ELSE, I WILL BE
-            HAPPY TO HELP YOU REACH YOUR GOALS.
-          </p>
-          <a
-            class="big-button text-center py-6 place-self-center w-fit text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
-            href="contact.html"
-          >
-            BOOK PRIVATE LESSON
-          </a>
+      <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 lg:hidden" aria-label="Mobile">
+        <div class="flex flex-col">
+        <a class="nav-link py-2 text-2xl" href="index.html#about">About</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#classes">Classes</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#schedule">Schedule</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#team">Team</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#gallery">Gallery</a>
+        <a class="nav-link py-2 text-2xl text-red" href="workshops.html">Workshops</a>
+        <a class="nav-link py-2 text-2xl" href="index.html#contact">Contact</a>
         </div>
-        <div class="lg:w-2/5">
-          <img src="assets/flowers.svg" alt="" />
+        <a class="btn btn-red mt-6 w-full" href="https://www.eversports.de/widget/w/0b1TJe" target="_blank" rel="noopener">Book a class</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section text-center">
+        <h1 class="text-5xl text-red md:text-7xl">Workshops</h1>
+        <p class="mx-auto mt-8 max-w-2xl">Here you'll find the latest workshops. I only invite choreographers I'm 100% confident in, who teach styles different from everyone else, so you can get inspired, find something new for your dance and reach the next level.</p>
+        <div class="mx-auto mt-12 max-w-2xl border border-dark-blue/20 p-8">
+          <h2 class="text-2xl">Upcoming</h2>
+          <!-- TODO: add workshops here: date, choreographer, style, price, booking link -->
+          <p class="mt-3 text-base">No dates announced right now. Follow us on Instagram to hear about new workshops first.</p>
+          <a class="btn btn-outline mt-6" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> @hheels.dance</a>
+        </div>
+      </section>
+
+      <section class="bg-nude/10">
+        <div class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+          <img class="mx-auto w-full max-w-sm" src="assets/flowers.webp" alt="White flowers on a light background" loading="lazy" />
+          <div>
+            <h2 class="section-title text-red">Private lessons</h2>
+            <p>Private lessons help you reach the next level faster or prepare for a specific project: a video shoot, your portfolio, a casting or anything else. I'll be happy to help you reach your goals.</p>
+            <a class="btn btn-red mt-8" href="https://api.whatsapp.com/send?phone=4915259516681" target="_blank" rel="noopener">Book a private lesson</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div class="md:order-2">
+          <img class="mx-auto w-full max-w-sm" src="assets/frame-up.webp" alt="Dancer in black on the floor in platform heels" loading="lazy" />
+        </div>
+        <div>
+          <h2 class="section-title text-red">Invite me to your city</h2>
+          <p>Want to organize a workshop in your city? Feel free to contact me. I can teach:</p>
+          <ul class="mt-4 list-inside list-disc space-y-1">
+            <li>High Heels foundation and choreography</li>
+            <li>Frame Up foundation and choreography</li>
+            <li>Creating a crew or solo show</li>
+          </ul>
+          <a class="btn btn-outline mt-8" href="mailto:moin@hheels.dance">Organize a workshop</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark-blue text-nude">
+      <div class="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-14 md:flex-row md:items-start md:justify-between md:px-10">
+        <div>
+          <img class="h-14" src="assets/big-logo-nude.svg" alt="HHeels" />
+          <p class="mt-4 text-sm">High heels dance studio in Hamburg</p>
+        </div>
+        <address class="text-sm not-italic">
+          <p class="font-serif text-base font-bold uppercase tracking-wide">Studio</p>
+          <p>Wiese, Wiesendamm 24</p>
+          <p>22305 Hamburg</p>
+          <p class="mt-2"><a class="hover:text-white" href="mailto:moin@hheels.dance">moin@hheels.dance</a></p>
+        </address>
+        <div class="text-sm">
+          <p class="font-serif text-base font-bold uppercase tracking-wide">Follow</p>
+          <div class="mt-2 flex gap-4 text-2xl">
+            <a class="hover:text-white" href="https://www.instagram.com/hheels.dance/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="hover:text-white" href="https://api.whatsapp.com/send?phone=4915259516681" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a class="hover:text-white" href="https://www.youtube.com/@VladaKosha" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a class="hover:text-white" href="mailto:moin@hheels.dance" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="px-28 organizer">
-      <div class="container flex justify-between items-center my-40">
-        <div class="lg:w-2/5">
-          <img src="assets/frame-up.svg" alt="" />
-        </div>
-        <div class="w-2/5 flex flex-col">
-          <p class="text-center pb-20 text-dark-blue text-2xl">
-            IF YOU WANT TO INVITE ME AND ORGANIZE A WORKSHOP IN YOUR CITY, FEEL
-            FREE TO CONTACT ME. I WILL BE HELPFUL IN: HIGH HEELS FOUNDATION AND
-            CHOREOGRAPHY FRAME UP FOUNDATION AND CHOREOGRAPHY CREATING A
-            CREW/SOLO SHOW.
-          </p>
-          <a
-            class="big-button text-center py-6 place-self-center text-red text-4xl font-serif font-bold border-red hover:text-white hover:bg-red"
-            href="contact.html"
-          >
-            ORGANIZE WORKSHOP
-          </a>
+      <div class="border-t border-nude/20">
+        <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-5 py-5 text-xs md:px-10">
+          <p>&copy; 2026 HHeels</p>
+          <div class="flex gap-6">
+            <a class="hover:text-white" href="impressum.html">Impressum</a>
+            <a class="hover:text-white" href="datenschutz.html">Datenschutz</a>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
+
+    <script src="src/js/index.js"></script>
   </body>
-
-  <script>
-    const burgerIcon = document.querySelector(".bi-list");
-    const mobileMenu = document.querySelector("#mobile-menu");
-    window.addEventListener("scroll", () =>
-      document.querySelector("#mobile-menu").classList.add("menu-hidden")
-    );
-    burgerIcon.addEventListener("click", function () {
-      mobileMenu.classList.toggle("menu-hidden");
-    });
-  </script>
 </html>

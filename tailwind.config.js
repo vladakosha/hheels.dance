@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./*"],
+  content: ["./*.html", "./src/**/*.js"],
   theme: {
     colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#FFFFFF",
       "dark-blue": "#2D333E",
       "light-blue": "#94A9C9",
       red: "#BB4251",
@@ -12,10 +15,7 @@ module.exports = {
       serif: ["Bell-MT", "ui-serif", "Georgia"],
       sans: ["Open Sans", "ui-sans-serif", "system-ui"],
     },
-    extend: {
-      // backgroundImage: {
-      //   "hero-image": "url('/assets/hero-img.jpg')",
-    },
+    extend: {},
   },
   plugins: [],
 };
