@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="High heels, Frame Up, stretching and choreo classes in Hamburg, with schedule and booking." />
+    <meta name="description" content="High heels, Frame Up, stretching and choreo classes in Hamburg, with schedule and prices." />
     <link rel="stylesheet" href="dist/style.css" />
     <script>document.documentElement.classList.add("js");</script>
     <title>Classes | HHeels</title>
@@ -43,65 +43,78 @@
 
     <main>
       <section class="section reveal pb-8 text-center md:pb-12">
-        <h1 class="page-title">Classes &amp; Prices</h1>
+        <h1 class="page-title">Classes</h1>
         <p class="mx-auto mt-6 max-w-2xl">From your very first steps in heels to Frame Up floor work.</p>
       </section>
 
-      <nav class="-mt-2 mb-12 flex justify-center gap-3 px-5 md:-mt-6" aria-label="On this page">
-        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#all-classes">Classes</a>
-        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#schedule">Schedule</a>
-        <a class="tag px-4 py-1.5 text-sm hover:bg-light-blue/60" href="#prices">Prices</a>
+      <nav class="-mt-2 mb-12 flex flex-wrap justify-center gap-3 px-5 md:-mt-6" aria-label="On this page">
+        <a class="btn btn-outline px-6 py-1.5 text-base" href="#heels">Heels</a>
+        <a class="btn btn-outline px-6 py-1.5 text-base" href="#no-heels">No heels</a>
+        <a class="btn btn-outline px-6 py-1.5 text-base" href="#schedule">Schedule</a>
+        <a class="btn btn-outline px-6 py-1.5 text-base" href="#prices">Prices</a>
       </nav>
-      <section id="all-classes" class="mx-auto max-w-6xl px-5 pb-16 md:px-10 md:pb-24">
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <article id="technique" class="reveal card flex flex-col">
+
+      <section id="heels" class="bg-light-blue">
+        <div class="section">
+          <h2 class="section-title">Heels classes</h2>
+          <div class="grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <article id="technique" class="reveal flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/classes-beginners.png" alt="Crossed legs in black high heels" loading="lazy" /></div>
-            <div class="flex flex-1 flex-col p-5">
-              <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">All levels</span></div>
-              <h2 class="mt-3 text-2xl">Technique</h2>
-              <p class="mt-2 flex-1 text-base">Stretching, physique training, high heels technique and Frame Up fundamentals in one class. The exercises get harder as you progress: the foundation every heels dancer needs.</p>
-              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=technique#signup">Join</a>
+            <div class="flex flex-1 flex-col pt-5">
+              <div class="flex flex-wrap gap-2"><span class="tag">All levels</span></div>
+              <h3 class="accent mt-3 text-2xl md:text-3xl">Technique</h3>
+              <p class="mt-3 flex-1 text-base">Stretching, physique training, high heels technique and Frame Up fundamentals in one class. The exercises get harder as you progress: the foundation every heels dancer needs.</p>
+              <a class="btn btn-outline mt-6 self-start" href="contact.html?class=technique#signup">Join</a>
             </div>
           </article>
-          <article id="high-heels-choreo" class="reveal card flex flex-col">
+          <article id="high-heels-choreo" class="reveal flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/classes-choreo.png" alt="Foot in a high heel shoe" loading="lazy" /></div>
-            <div class="flex flex-1 flex-col p-5">
-              <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span></div>
-              <h2 class="mt-3 text-2xl">High Heels Choreo</h2>
-              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
-              <p class="mt-2 flex-1 text-base">Elegant choreography with the fierce confidence of stilettos. Build coordination, musicality and self-assurance, on and off the dance floor.</p>
-              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=high-heels-choreo#signup">Join</a>
+            <div class="flex flex-1 flex-col pt-5">
+              <div class="flex flex-wrap gap-2"><span class="tag">Beginner &amp; intermediate</span></div>
+              <h3 class="accent mt-3 text-2xl md:text-3xl">High Heels Choreo</h3>
+              <p class="mt-2 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
+              <p class="mt-3 flex-1 text-base">Elegant choreography with the fierce confidence of stilettos. Build coordination, musicality and self-assurance, on and off the dance floor.</p>
+              <a class="btn btn-outline mt-6 self-start" href="contact.html?class=high-heels-choreo#signup">Join</a>
             </div>
           </article>
-          <article id="frame-up" class="reveal card flex flex-col">
+          <article id="frame-up" class="reveal flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/classes-frameup.png" alt="Dancer crouching in heels" loading="lazy" /></div>
-            <div class="flex flex-1 flex-col p-5">
-              <div class="flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span></div>
-              <h2 class="mt-3 text-2xl">Frame Up Choreo</h2>
-              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
-              <p class="mt-2 flex-1 text-base">Frame Up Strip blends high heels, breakdance and strip-plastic. Precise floor work, flexibility, core strength and musicality. Proper footwear required.</p>
-              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=frame-up#signup">Join</a>
+            <div class="flex flex-1 flex-col pt-5">
+              <div class="flex flex-wrap gap-2"><span class="tag">Intermediate</span></div>
+              <h3 class="accent mt-3 text-2xl md:text-3xl">Frame Up Choreo</h3>
+              <p class="mt-2 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vlada Kosha</a></p>
+              <p class="mt-3 flex-1 text-base">Frame Up Strip blends high heels, breakdance and strip-plastic. Precise floor work, flexibility, core strength and musicality. Proper footwear required.</p>
+              <a class="btn btn-outline mt-6 self-start" href="contact.html?class=frame-up#signup">Join</a>
             </div>
           </article>
-          <article id="stretching" class="reveal card flex flex-col">
+          </div>
+        </div>
+      </section>
+
+      <section id="no-heels" class="bg-dark-blue text-nude">
+        <div class="section">
+          <h2 class="section-title">No heels classes</h2>
+          <div class="grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <article id="stretching" class="reveal flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/classes-technique.png" alt="Crossed hands and wrists" loading="lazy" /></div>
-            <div class="flex flex-1 flex-col p-5">
-              <div class="flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">All levels</span></div>
-              <h2 class="mt-3 text-2xl">Stretching</h2>
-              <p class="mt-2 flex-1 text-base">Dynamic and static stretching for flexibility, better posture and injury prevention. More fluid movement for every dancer.</p>
-              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=stretching#signup">Join</a>
+            <div class="flex flex-1 flex-col pt-5">
+              <div class="flex flex-wrap gap-2"><span class="tag">All levels</span></div>
+              <h3 class="accent mt-3 text-2xl md:text-3xl">Stretching</h3>
+              <p class="mt-3 flex-1 text-base">Dynamic and static stretching for flexibility, better posture and injury prevention. More fluid movement for every dancer.</p>
+              <a class="btn btn-light mt-6 self-start" href="contact.html?class=stretching#signup">Join</a>
             </div>
           </article>
-          <article id="choreo" class="reveal card flex flex-col">
+          <article id="choreo" class="reveal flex flex-col">
             <div class="overflow-hidden"><img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" src="assets/teacher1.png" alt="Dancer in sneakers bending backwards" loading="lazy" /></div>
-            <div class="flex flex-1 flex-col p-5">
-              <div class="flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">Open level</span></div>
-              <h2 class="mt-3 text-2xl">Choreo</h2>
-              <p class="mt-1 text-sm italic">with <a class="underline hover:text-red" href="teachers.html">Vishana Odhiambo &amp; Lucia Kehn</a></p>
-              <p class="mt-2 flex-1 text-base">Ballet, vogue and contemporary meet hip hop, waving and popping: classical elegance meets street style, taught with calm and precision.</p>
-              <a class="btn btn-outline mt-5 self-start" href="contact.html?class=choreo#signup">Join</a>
+            <div class="flex flex-1 flex-col pt-5">
+              <div class="flex flex-wrap gap-2"><span class="tag">Open level</span></div>
+              <h3 class="accent mt-3 text-2xl md:text-3xl">Choreo</h3>
+              <p class="mt-2 text-sm italic">with <a class="underline text-nude hover:text-white" href="teachers.html">Vishana Odhiambo &amp; Lucia Kehn</a></p>
+              <p class="mt-3 flex-1 text-base">Ballet, vogue and contemporary meet hip hop, waving and popping: classical elegance meets street style, taught with calm and precision.</p>
+              <a class="btn btn-light mt-6 self-start" href="contact.html?class=choreo#signup">Join</a>
             </div>
           </article>
+          </div>
         </div>
       </section>
 
@@ -115,7 +128,6 @@
         <h2 class="section-title text-red">Prices</h2>
         <div class="min-h-[12rem] bg-white" data-eversports-widget-id="d3526a3f-730d-4d71-9bcb-81088df0b96c"></div>
       </section>
-
       <!-- Eversports loader: include only once per page -->
       <script type="module" src="https://widget-static.eversports.io/loader.js" async defer></script>
     </main>

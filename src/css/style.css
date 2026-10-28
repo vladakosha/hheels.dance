@@ -46,17 +46,23 @@
     @apply mx-auto max-w-6xl px-5 py-16 md:px-10 md:py-24;
   }
 
+  /* Big, bold headings: the drama of the original design */
   .section-title {
-    @apply mb-10 text-4xl md:mb-14 md:text-6xl;
+    @apply mb-10 text-5xl leading-none tracking-tighter md:mb-16 md:text-8xl;
   }
 
-  /* Oval outline button, as in the original design */
+  /* Italic caps for subtitles, as in the original course titles */
+  .accent {
+    @apply font-sans font-normal uppercase italic tracking-wide;
+  }
+
+  /* Flat ellipse with a thin outline, as the original JOIN button */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border px-7 py-2.5 font-serif text-lg font-bold uppercase tracking-wide transition-colors;
+    @apply inline-flex items-center justify-center gap-2 rounded-[50%] border px-10 py-3 font-serif text-xl font-bold uppercase tracking-wide transition-colors duration-300;
   }
 
   .btn-red {
-    @apply border-red bg-red text-white hover:bg-white hover:text-red;
+    @apply border-red text-red hover:bg-red hover:text-white;
   }
 
   .btn-outline {
@@ -68,11 +74,12 @@
   }
 
   .page-title {
-    @apply break-words text-4xl text-red sm:text-5xl md:text-7xl;
+    @apply break-words text-5xl leading-none tracking-tighter text-red sm:text-6xl md:text-9xl;
   }
 
+  /* Thin geometric frame instead of soft shadows */
   .card {
-    @apply overflow-hidden bg-white/80 shadow-[0_10px_40px_-15px_rgba(45,51,62,0.25)] backdrop-blur-sm;
+    @apply overflow-hidden border border-dark-blue/25 bg-white/70 backdrop-blur-sm;
   }
 
   .nav-link {
@@ -99,7 +106,7 @@
   }
 
   .tag {
-    @apply rounded-full bg-light-blue/30 px-3 py-0.5 text-xs font-semibold uppercase tracking-wider;
+    @apply rounded-[50%] border border-current px-5 py-1 text-xs font-semibold uppercase tracking-wider;
   }
 }
 
@@ -126,16 +133,18 @@
   }
 }
 
-/* Flowers drifting up the page background, created in src/js/index.js */
+/* Chrome flowers drifting up the page background, created in src/js/index.js */
 .flower {
   position: absolute;
   top: 100%;
+  perspective: 400px;
   animation: flower-rise var(--duration) linear var(--delay) infinite;
 }
 
-.flower svg {
+.flower img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   animation: flower-sway 7s ease-in-out infinite alternate;
 }
 
@@ -145,12 +154,13 @@
   }
 }
 
+/* Turning slightly in 3D makes the chrome catch the light */
 @keyframes flower-sway {
   from {
-    transform: translateX(-18px) rotate(-8deg);
+    transform: translateX(-18px) rotateY(-35deg) rotate(-8deg);
   }
   to {
-    transform: translateX(18px) rotate(8deg);
+    transform: translateX(18px) rotateY(35deg) rotate(8deg);
   }
 }
 
@@ -160,7 +170,7 @@
   }
 
   .flower,
-  .flower svg,
+  .flower img,
   .hero-in {
     animation: none;
   }
