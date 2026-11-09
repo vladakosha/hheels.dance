@@ -29,28 +29,33 @@ document
   .querySelectorAll(".reveal")
   .forEach((el) => revealObserver.observe(el));
 
-// Liquid-chrome flowers drifting up the background
+// Translucent flowers drifting up the page edges, away from the text
 const flowerLayer = document.querySelector("#flowers");
 
 if (flowerLayer) {
-  const count = window.innerWidth < 768 ? 6 : 10;
+  const small = window.innerWidth < 768;
+  const count = small ? 4 : 8;
+  // Free space on each side of the 72rem content column
+  const gutter = Math.max((window.innerWidth - 1152) / 2, small ? 40 : 90);
   for (let i = 0; i < count; i++) {
-    const size = 45 + Math.random() * 60;
-    const duration = 30 + Math.random() * 30;
+    const size = small ? 50 + Math.random() * 30 : 70 + Math.random() * 60;
+    const duration = 35 + Math.random() * 30;
+    const onLeft = i % 2 === 0;
+    const x = Math.random() * gutter - size / 2;
     const flower = document.createElement("div");
     flower.className = "flower";
     flower.style.cssText = `
-      left: ${Math.random() * 95}%;
+      ${onLeft ? "left" : "right"}: ${x}px;
       width: ${size}px;
       height: ${size}px;
-      opacity: ${0.75 + Math.random() * 0.25};
+      opacity: ${small ? 0.35 + Math.random() * 0.15 : 0.55 + Math.random() * 0.25};
       --duration: ${duration}s;
       --delay: ${-Math.random() * duration}s;
-      --drift: ${(Math.random() - 0.5) * 30}vw;
-      --spin: ${(Math.random() - 0.5) * 360}deg;
+      --drift: ${(onLeft ? 1 : -1) * Math.random() * 3}vw;
+      --spin: ${(Math.random() - 0.5) * 240}deg;
       --still-top: ${Math.random() * 95}%;
     `;
-    flower.innerHTML = `<img src="assets/flowers/chrome-${(i % 5) + 1}.webp" alt="" />`;
+    flower.innerHTML = `<img src="assets/flowers/sheer-${(i % 5) + 1}.webp" alt="" />`;
     flowerLayer.appendChild(flower);
   }
 }

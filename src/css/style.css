@@ -133,7 +133,7 @@
   }
 }
 
-/* Chrome flowers drifting up the page background, created in src/js/index.js */
+/* Flowers drifting up the page edges, created in src/js/index.js */
 .flower {
   position: absolute;
   top: 100%;
@@ -154,7 +154,7 @@
   }
 }
 
-/* Turning slightly in 3D makes the chrome catch the light */
+/* A slight 3D turn makes the petals look like they float */
 @keyframes flower-sway {
   from {
     transform: translateX(-18px) rotateY(-35deg) rotate(-8deg);
