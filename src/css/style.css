@@ -185,3 +185,16 @@
     transition: none;
   }
 }
+
+/* Structure draft: placeholders that say what content goes where */
+.ph {
+  @apply flex flex-col items-center justify-center gap-1 border-2 border-dashed border-current p-4 text-center text-sm italic opacity-80;
+}
+
+.ph-kind {
+  @apply font-sans text-xs font-semibold not-italic uppercase tracking-[0.2em];
+}
+
+.step {
+  @apply mb-3 font-sans text-xs font-semibold uppercase tracking-[0.25em] opacity-60;
+}

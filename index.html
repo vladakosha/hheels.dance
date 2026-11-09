@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="High heels, Frame Up, stretching and choreo classes in Hamburg. Book your class with HHeels." />
+    <meta name="description" content="High heels, Frame Up, stretching and choreo classes in Hamburg. Book your trial class with HHeels." />
     <link rel="stylesheet" href="dist/style.css" />
     <script>document.documentElement.classList.add("js");</script>
     <title>HHeels | High heels dance studio in Hamburg</title>
@@ -12,18 +12,19 @@
     <div id="flowers" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true"></div>
     <header class="sticky top-0 z-30 border-b border-dark-blue/10 bg-white/90 backdrop-blur">
       <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-5 md:h-20 md:px-10">
-        <a href="index.html" aria-label="HHeels home">
+        <a href="#top" aria-label="HHeels home">
           <img class="h-10 md:h-12" src="assets/big-logo-blue.svg" alt="HHeels" />
         </a>
         <nav class="hidden items-center gap-8 whitespace-nowrap xl:flex" aria-label="Main">
-          <a class="nav-link nav-link-active" href="index.html" aria-current="page">Home</a>
-          <a class="nav-link" href="classes.html">Classes &amp; Prices</a>
-          <a class="nav-link" href="teachers.html">Team</a>
-          <a class="nav-link" href="workshops.html">Workshops</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#classes">Classes</a>
+          <a class="nav-link" href="#schedule">Schedule</a>
+          <a class="nav-link" href="#prices">Prices</a>
+          <a class="nav-link" href="#team">Team</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#signup">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="contact.html#signup">Sign up</a>
+          <a class="btn btn-red hidden px-5 py-1.5 text-base sm:inline-flex" href="#signup">Trial class</a>
           <button id="menu-button" class="flex h-10 w-10 items-center justify-center text-3xl xl:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
             <i class="bi bi-list"></i>
           </button>
@@ -31,116 +32,327 @@
       </div>
       <nav id="mobile-menu" class="hidden border-t border-dark-blue/10 bg-white px-5 pb-8 pt-4 xl:hidden" aria-label="Mobile">
         <div class="flex flex-col items-start">
-          <a class="nav-link nav-link-active py-2 text-2xl" href="index.html" aria-current="page">Home</a>
-          <a class="nav-link py-2 text-2xl" href="classes.html">Classes &amp; Prices</a>
-          <a class="nav-link py-2 text-2xl" href="teachers.html">Team</a>
-          <a class="nav-link py-2 text-2xl" href="workshops.html">Workshops</a>
-          <a class="nav-link py-2 text-2xl" href="contact.html">Contact</a>
+          <a class="nav-link py-2 text-2xl" href="#classes">Classes</a>
+          <a class="nav-link py-2 text-2xl" href="#schedule">Schedule</a>
+          <a class="nav-link py-2 text-2xl" href="#prices">Prices</a>
+          <a class="nav-link py-2 text-2xl" href="#team">Team</a>
+          <a class="nav-link py-2 text-2xl" href="#faq">FAQ</a>
+          <a class="nav-link py-2 text-2xl" href="#signup">Contact</a>
         </div>
-        <a class="btn btn-red mt-6 w-full" href="contact.html#signup">Sign up</a>
+        <a class="btn btn-red mt-6 w-full" href="#signup">Trial class</a>
       </nav>
     </header>
 
-    <main>
-      <section class="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden md:min-h-[calc(100svh-5rem)]">
-        <img class="absolute inset-0 h-full w-full object-cover object-[70%_center]" src="assets/hero-img.webp" alt="Dancer in black platform heels" />
-        <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-white/30 to-transparent md:from-white/50"></div>
+    <main id="top">
+
+      <!-- 01 HERO: who we are, the offer, one clear first step -->
+      <section class="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-dark-blue text-white md:min-h-[calc(100svh-5rem)]">
+        <div class="ph absolute inset-0 border-0 bg-dark-blue !items-end !justify-end p-8 text-nude/70"><i class="bi bi-camera-reels text-2xl"></i><span class="ph-kind">ВИДЕО</span><span>фоновое видео 10–15 сек: нарезка с занятий и выступлений, без звука, по кругу</span></div>
         <div class="relative mx-auto w-full max-w-6xl px-5 py-16 md:px-10">
-          <img class="hero-in w-72 md:w-[36rem]" src="assets/big-logo-blue.svg" alt="HHeels" />
-          <p class="hero-in mt-6 font-serif text-3xl font-bold uppercase leading-tight [animation-delay:150ms] md:ml-28 md:text-5xl">I feel like<br />dancing here&hellip;</p>
-          <p class="hero-in accent mt-4 max-w-sm text-sm [animation-delay:300ms] md:ml-28">High heels dance studio &middot; Hamburg</p>
-          <div class="hero-in mt-8 flex flex-wrap gap-4 [animation-delay:450ms] md:ml-28">
-            <a class="btn btn-red bg-white/50" href="contact.html#signup">Sign up</a>
-            <a class="btn btn-outline bg-white/50" href="#schedule">Schedule</a>
+          <p class="step">01 &mdash; Первый экран</p>
+          <img class="mt-4 w-64 md:w-[30rem]" src="assets/big-logo-nude.svg" alt="HHeels" />
+          <h1 class="mt-6 max-w-3xl text-4xl leading-none tracking-tight md:text-6xl">High heels dance studio in Hamburg</h1>
+          <div class="ph mt-6 max-w-xl border-nude/50 text-nude"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>1 строка: для кого и что получишь. Например: «Для всех уровней — от первого шага на каблуках до сцены»</span></div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="btn btn-light" href="#signup">Trial class &middot; X &euro;</a>
+            <a class="btn btn-light" href="#schedule">Schedule</a>
           </div>
         </div>
       </section>
 
-      <section class="section reveal grid items-center gap-10 md:grid-cols-2 md:gap-16">
-        <div>
-          <h2 class="section-title text-red">About HHeels</h2>
-          <p>Our studio was born from a <em>passion</em> for high heels dance. With over a decade of experience, we push boundaries and work to elevate high heels as a professional dance style through technique-focused classes.</p>
-          <p class="mt-4">Technique is our cornerstone, and our choreography aims to create something <em>unique</em>: helping you find your own expression through movement and <em>embrace</em> the transformative power of dance.</p>
+      <!-- 02 WHY: three reasons to come -->
+      <section class="section">
+        <p class="step">02 &mdash; Почему к нам</p>
+        <h2 class="section-title">Why HHeels</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="reveal">
+            <div class="ph h-28 w-28 p-2"><i class="bi bi-stars text-2xl"></i><span class="ph-kind">ИКОНКА</span><span>иконка или фото</span></div>
+            <h3 class="accent mt-5 text-2xl">Confidence</h3>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>как танец меняет ощущение себя</span></div>
+          </div>
+          <div class="reveal">
+            <div class="ph h-28 w-28 p-2"><i class="bi bi-stars text-2xl"></i><span class="ph-kind">ИКОНКА</span><span>иконка или фото</span></div>
+            <h3 class="accent mt-5 text-2xl">Technique</h3>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>17 лет опыта, база и прогресс от занятия к занятию</span></div>
+          </div>
+          <div class="reveal">
+            <div class="ph h-28 w-28 p-2"><i class="bi bi-stars text-2xl"></i><span class="ph-kind">ИКОНКА</span><span>иконка или фото</span></div>
+            <h3 class="accent mt-5 text-2xl">Community</h3>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>атмосфера, девочки, выступления и съёмки</span></div>
+          </div>
         </div>
-        <img class="mx-auto w-full max-w-sm md:max-w-none" src="assets/about.webp" alt="Silhouette of feet in heels on a sunlit floor" loading="lazy" />
       </section>
 
+      <!-- 03 FIND YOUR CLASS: by level, not by dance names -->
       <section class="bg-light-blue">
-        <div class="section reveal">
-          <h2 class="section-title">Our classes</h2>
-          <div class="border-t border-dark-blue/30">
-            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/30 py-5" href="classes.html#technique">
-              <span class="accent text-2xl group-hover:text-red md:text-4xl">Technique</span>
-              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">All levels</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
-            </a>
-            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/30 py-5" href="classes.html#high-heels-choreo">
-              <span class="accent text-2xl group-hover:text-red md:text-4xl">High Heels Choreo</span>
-              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
-            </a>
-            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/30 py-5" href="classes.html#frame-up">
-              <span class="accent text-2xl group-hover:text-red md:text-4xl">Frame Up Choreo</span>
-              <span class="flex items-center gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
-            </a>
-            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/30 py-5" href="classes.html#stretching">
-              <span class="accent text-2xl group-hover:text-red md:text-4xl">Stretching</span>
-              <span class="flex items-center gap-2"><span class="tag">No heels</span><span class="tag">All levels</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
-            </a>
-            <a class="group flex flex-wrap items-center justify-between gap-3 border-b border-dark-blue/30 py-5" href="classes.html#choreo">
-              <span class="accent text-2xl group-hover:text-red md:text-4xl">Choreo</span>
-              <span class="flex items-center gap-2"><span class="tag">No heels</span><span class="tag">Open level</span><i class="bi bi-arrow-right ml-2 text-xl transition-transform group-hover:translate-x-1"></i></span>
-            </a>
+        <div class="section">
+          <p class="step">03 &mdash; Какой класс мне подходит</p>
+          <h2 class="section-title">Find your class</h2>
+          <div class="grid gap-6 md:grid-cols-3">
+          <div class="reveal card flex flex-col p-6 md:p-8">
+            <h3 class="accent text-2xl md:text-3xl">I'm new to heels</h3>
+            <div class="ph mt-4 min-h-[6rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>для тех, кто никогда не танцевал на каблуках</span></div>
+            <ul class="mt-6 flex-1 space-y-2 font-serif text-lg font-bold uppercase"><li><a class="hover:text-red" href="#technique">Technique &rarr;</a></li><li><a class="hover:text-red" href="#high-heels-choreo">High Heels Choreo &rarr;</a></li><li><a class="hover:text-red" href="#stretching">Stretching &rarr;</a></li></ul>
           </div>
-          <a class="btn btn-outline mt-10" href="classes.html">Classes &amp; prices</a>
+          <div class="reveal card flex flex-col p-6 md:p-8">
+            <h3 class="accent text-2xl md:text-3xl">I already dance</h3>
+            <div class="ph mt-4 min-h-[6rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>для тех, кто хочет хореографию и сцену</span></div>
+            <ul class="mt-6 flex-1 space-y-2 font-serif text-lg font-bold uppercase"><li><a class="hover:text-red" href="#high-heels-choreo">High Heels Choreo &rarr;</a></li><li><a class="hover:text-red" href="#frame-up">Frame Up Choreo &rarr;</a></li></ul>
+          </div>
+          <div class="reveal card flex flex-col p-6 md:p-8">
+            <h3 class="accent text-2xl md:text-3xl">No heels, please</h3>
+            <div class="ph mt-4 min-h-[6rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>танцы и растяжка без каблуков</span></div>
+            <ul class="mt-6 flex-1 space-y-2 font-serif text-lg font-bold uppercase"><li><a class="hover:text-red" href="#stretching">Stretching &rarr;</a></li><li><a class="hover:text-red" href="#choreo">Choreo &rarr;</a></li></ul>
+          </div>
+          </div>
         </div>
       </section>
 
-      <section id="schedule" class="section reveal">
-        <h2 class="section-title text-red">Schedule</h2>
-        <div class="min-h-[20rem] bg-white" data-eversports-widget-id="9395c510-4511-42d3-9338-9d24b0d9029b"></div>
-        <p class="mt-6 text-base">Book online through Eversports, or <a class="font-semibold text-red underline" href="contact.html#signup">sign up with us directly</a>.</p>
+      <!-- 04 CLASSES: all classes in detail -->
+      <section id="classes" class="section">
+        <p class="step">04 &mdash; Все классы</p>
+        <h2 class="section-title">Classes</h2>
+        <div class="grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <article id="technique" class="reveal flex flex-col">
+            <div class="ph aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото с этого класса, вертикальное 4:5</span></div>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">All levels</span></div>
+            <h3 class="accent mt-3 text-2xl">Technique</h3>
+            <p class="mt-2 text-sm italic">with &hellip; (кто ведёт)</p>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>2 предложения: что даёт класс и для кого он</span></div>
+            <a class="btn btn-outline mt-5 self-start" href="?class=technique#signup">Join</a>
+          </article>
+          <article id="high-heels-choreo" class="reveal flex flex-col">
+            <div class="ph aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото с этого класса, вертикальное 4:5</span></div>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Beginner &amp; intermediate</span></div>
+            <h3 class="accent mt-3 text-2xl">High Heels Choreo</h3>
+            <p class="mt-2 text-sm italic">with Vlada Kosha</p>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>2 предложения: что даёт класс и для кого он</span></div>
+            <a class="btn btn-outline mt-5 self-start" href="?class=high-heels-choreo#signup">Join</a>
+          </article>
+          <article id="frame-up" class="reveal flex flex-col">
+            <div class="ph aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото с этого класса, вертикальное 4:5</span></div>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">In heels</span><span class="tag">Intermediate</span></div>
+            <h3 class="accent mt-3 text-2xl">Frame Up Choreo</h3>
+            <p class="mt-2 text-sm italic">with Vlada Kosha</p>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>2 предложения: что даёт класс и для кого он</span></div>
+            <a class="btn btn-outline mt-5 self-start" href="?class=frame-up#signup">Join</a>
+          </article>
+          <article id="stretching" class="reveal flex flex-col">
+            <div class="ph aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото с этого класса, вертикальное 4:5</span></div>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">All levels</span></div>
+            <h3 class="accent mt-3 text-2xl">Stretching</h3>
+            <p class="mt-2 text-sm italic">with &hellip; (кто ведёт)</p>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>2 предложения: что даёт класс и для кого он</span></div>
+            <a class="btn btn-outline mt-5 self-start" href="?class=stretching#signup">Join</a>
+          </article>
+          <article id="choreo" class="reveal flex flex-col">
+            <div class="ph aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото с этого класса, вертикальное 4:5</span></div>
+            <div class="mt-4 flex flex-wrap gap-2"><span class="tag">No heels</span><span class="tag">Open level</span></div>
+            <h3 class="accent mt-3 text-2xl">Choreo</h3>
+            <p class="mt-2 text-sm italic">with Vishana Odhiambo &amp; Lucia Kehn</p>
+            <div class="ph mt-3 min-h-[5rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>2 предложения: что даёт класс и для кого он</span></div>
+            <a class="btn btn-outline mt-5 self-start" href="?class=choreo#signup">Join</a>
+          </article>
+        </div>
       </section>
 
+      <!-- 05 VIDEO: the strongest proof -->
       <section class="bg-dark-blue text-nude">
-        <div class="section reveal">
-          <h2 class="section-title">Gallery</h2>
+        <div class="section">
+          <p class="step">05 &mdash; Видео</p>
+          <h2 class="section-title">See us dance</h2>
           <div class="-mx-5 flex snap-x gap-4 overflow-x-auto px-5 pb-4 md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0">
-          <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
-            <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/frame-up.webp" alt="" loading="lazy" />
-            <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
-            <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
-          </a>
-          <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
-            <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/classes-choreo.png" alt="" loading="lazy" />
-            <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
-            <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
-          </a>
-          <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
-            <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/about.webp" alt="" loading="lazy" />
-            <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
-            <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
-          </a>
-          <a class="group relative block aspect-[9/16] w-56 shrink-0 snap-start overflow-hidden md:w-auto" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Watch on Instagram">
-            <!-- TODO: replace with the reel link and a short muted looping video -->
-            <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/classes-frameup.png" alt="" loading="lazy" />
-            <span class="absolute inset-0 flex items-center justify-center bg-dark-blue/20 text-5xl text-white"><i class="bi bi-play-circle"></i></span>
-            <span class="absolute bottom-3 left-3 text-xl text-white"><i class="bi bi-instagram"></i></span>
-          </a>
+            <div class="ph aspect-[9/16] w-56 shrink-0 snap-start border-nude/50 md:w-auto"><i class="bi bi-camera-reels text-2xl"></i><span class="ph-kind">ВИДЕО</span><span>reel: хореография High Heels Choreo</span></div>
+            <div class="ph aspect-[9/16] w-56 shrink-0 snap-start border-nude/50 md:w-auto"><i class="bi bi-camera-reels text-2xl"></i><span class="ph-kind">ВИДЕО</span><span>reel: Frame Up, работа в партере</span></div>
+            <div class="ph aspect-[9/16] w-56 shrink-0 snap-start border-nude/50 md:w-auto"><i class="bi bi-camera-reels text-2xl"></i><span class="ph-kind">ВИДЕО</span><span>reel: выступление на сцене</span></div>
+            <div class="ph aspect-[9/16] w-56 shrink-0 snap-start border-nude/50 md:w-auto"><i class="bi bi-camera-reels text-2xl"></i><span class="ph-kind">ВИДЕО</span><span>reel: атмосфера класса, бэкстейдж</span></div>
           </div>
           <a class="btn btn-light mt-8" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> More on Instagram</a>
         </div>
       </section>
 
-      <section class="section reveal text-center">
-        <h2 class="section-title text-red">Ready to dance?</h2>
-        <p class="accent -mt-4 md:-mt-8">Your first step into heels starts with one class</p>
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-          <a class="btn btn-red" href="contact.html#signup">Sign up</a>
-          <a class="btn btn-outline" href="classes.html#prices">Prices</a>
+      <!-- 06 FOUNDER: the face of the studio -->
+      <section class="section grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div class="ph reveal aspect-[4/5]"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>большое фото Влады, вертикальное</span></div>
+        <div class="reveal">
+          <p class="step">06 &mdash; Основательница</p>
+          <h2 class="section-title text-red">Meet Vlada</h2>
+          <div class="ph min-h-[8rem]"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>история: балет, хореография, 17 лет преподавания, 14 из них в High Heels, зачем создала HHeels</span></div>
+          <div class="ph mt-4 min-h-[4rem] italic"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>цитата Влады о своих занятиях</span></div>
         </div>
       </section>
+
+      <!-- 07 TEAM -->
+      <section id="team" class="bg-nude/15">
+        <div class="section">
+          <p class="step">07 &mdash; Команда</p>
+          <h2 class="section-title">Our team</h2>
+          <div class="grid grid-cols-2 gap-6 md:grid-cols-5">
+            <div class="reveal">
+              <div class="ph aspect-square"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото</span></div>
+              <p class="mt-3 font-serif text-lg font-bold uppercase">Vishana Odhiambo</p>
+              <p class="text-sm italic">какие классы ведёт</p>
+            </div>
+            <div class="reveal">
+              <div class="ph aspect-square"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото</span></div>
+              <p class="mt-3 font-serif text-lg font-bold uppercase">Lucia Kehn</p>
+              <p class="text-sm italic">какие классы ведёт</p>
+            </div>
+            <div class="reveal">
+              <div class="ph aspect-square"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото</span></div>
+              <p class="mt-3 font-serif text-lg font-bold uppercase">Tetiana Rabotynska</p>
+              <p class="text-sm italic">какие классы ведёт</p>
+            </div>
+            <div class="reveal">
+              <div class="ph aspect-square"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото</span></div>
+              <p class="mt-3 font-serif text-lg font-bold uppercase">Ronja Effenberger</p>
+              <p class="text-sm italic">какие классы ведёт</p>
+            </div>
+            <div class="reveal">
+              <div class="ph aspect-square"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото</span></div>
+              <p class="mt-3 font-serif text-lg font-bold uppercase">Svetlana Gribova</p>
+              <p class="text-sm italic">какие классы ведёт</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 REVIEWS: social proof -->
+      <section class="section">
+        <p class="step">08 &mdash; Отзывы</p>
+        <h2 class="section-title text-red">What students say</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+          <figure class="reveal card p-6 md:p-8">
+            <div class="ph min-h-[9rem]"><i class="bi bi-chat-quote text-2xl"></i><span class="ph-kind">ОТЗЫВ</span><span>отзыв ученицы №1: 2–3 предложения, имя, сколько ходит</span></div>
+            <div class="ph mt-4 h-16 w-16 rounded-full p-2"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото или аватар</span></div>
+          </figure>
+          <figure class="reveal card p-6 md:p-8">
+            <div class="ph min-h-[9rem]"><i class="bi bi-chat-quote text-2xl"></i><span class="ph-kind">ОТЗЫВ</span><span>отзыв ученицы №2: 2–3 предложения, имя, сколько ходит</span></div>
+            <div class="ph mt-4 h-16 w-16 rounded-full p-2"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото или аватар</span></div>
+          </figure>
+          <figure class="reveal card p-6 md:p-8">
+            <div class="ph min-h-[9rem]"><i class="bi bi-chat-quote text-2xl"></i><span class="ph-kind">ОТЗЫВ</span><span>отзыв ученицы №3: 2–3 предложения, имя, сколько ходит</span></div>
+            <div class="ph mt-4 h-16 w-16 rounded-full p-2"><i class="bi bi-image text-2xl"></i><span class="ph-kind">ФОТО</span><span>фото или аватар</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 09 SCHEDULE -->
+      <section id="schedule" class="bg-light-blue">
+        <div class="section">
+          <p class="step">09 &mdash; Расписание</p>
+          <h2 class="section-title">Schedule</h2>
+          <div class="min-h-[20rem] bg-white" data-eversports-widget-id="9395c510-4511-42d3-9338-9d24b0d9029b"></div>
+        </div>
+      </section>
+
+      <!-- 10 PRICES: trial class first -->
+      <section id="prices" class="section">
+        <p class="step">10 &mdash; Цены</p>
+        <h2 class="section-title text-red">Prices</h2>
+        <div class="reveal card mb-8 flex flex-wrap items-center justify-between gap-6 p-6 md:p-8">
+          <div>
+            <h3 class="accent text-2xl md:text-3xl">Trial class</h3>
+            <div class="ph mt-3"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>цена пробного занятия и что в него входит</span></div>
+          </div>
+          <a class="btn btn-red" href="#signup">Book trial</a>
+        </div>
+        <div class="min-h-[12rem] bg-white" data-eversports-widget-id="d3526a3f-730d-4d71-9bcb-81088df0b96c"></div>
+      </section>
+
+      <!-- 11 WORKSHOPS & PRIVATE LESSONS -->
+      <section id="workshops" class="bg-dark-blue text-nude">
+        <div class="section">
+          <p class="step">11 &mdash; Воркшопы и индивидуально</p>
+          <h2 class="section-title">Workshops</h2>
+          <div class="grid gap-10 md:grid-cols-2">
+            <div class="reveal">
+              <h3 class="accent text-2xl md:text-3xl">Upcoming</h3>
+              <div class="ph mt-4 min-h-[8rem] border-nude/50"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ближайшие воркшопы: дата, хореограф, стиль, цена — или «скоро новые даты»</span></div>
+            </div>
+            <div class="reveal">
+              <h3 class="accent text-2xl md:text-3xl">Private lessons</h3>
+              <div class="ph mt-4 min-h-[5rem] border-nude/50"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>индивидуальные занятия: для чего (съёмка, кастинг, портфолио), как записаться</span></div>
+              <h3 class="accent mt-8 text-2xl md:text-3xl">Invite Vlada</h3>
+              <div class="ph mt-4 border-nude/50"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>пригласить на воркшоп в свой город</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12 FAQ: answers to the fears that stop people from writing -->
+      <section id="faq" class="section">
+        <p class="step">12 &mdash; Вопросы и ответы</p>
+        <h2 class="section-title">FAQ</h2>
+        <div class="border-t border-dark-blue/25">
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">I've never danced. Can I come?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: да, с чего начать новичку, какой класс выбрать</span></div>
+          </details>
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">Do I need high heels?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: какие туфли нужны, можно ли прийти без каблуков в первый раз</span></div>
+          </details>
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">What should I wear?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: одежда, наколенники для Frame Up</span></div>
+          </details>
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">How does the trial class work?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: сколько стоит, как записаться, что будет на занятии</span></div>
+          </details>
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">How do I pay and cancel?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: абонементы, Eversports, правила отмены</span></div>
+          </details>
+          <details class="faq group border-b border-dark-blue/25 py-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-xl font-bold uppercase md:text-2xl">Where is the studio?<i class="bi bi-plus-lg text-red transition-transform group-open:rotate-45"></i></summary>
+            <div class="ph mt-4"><i class="bi bi-text-paragraph text-2xl"></i><span class="ph-kind">ТЕКСТ</span><span>ответ: адрес, как добраться, где переодеться</span></div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 13 SIGN UP: the original form with the big H -->
+      <div class="mx-auto max-w-6xl px-5 md:px-10"><p class="step">13 &mdash; Запись и контакты</p></div>
+      <section id="signup" class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:px-10 md:py-20 lg:grid-cols-2">
+        <img class="reveal hidden w-full max-w-md lg:block" src="assets/logo-contact.svg" alt="" />
+        <div class="reveal">
+          <h2 class="text-center text-5xl leading-none tracking-tighter text-red md:text-7xl">Contact us</h2>
+          <p class="mt-4 text-center">Sign up for a class or ask us anything.</p>
+          <form id="signup-form" class="mt-10 grid gap-5">
+            <label><span class="sr-only">Name</span><input class="field" type="text" name="name" required placeholder="NAME" /></label>
+            <label><span class="sr-only">E-mail or phone</span><input class="field" type="text" name="contact" required placeholder="E-MAIL OR PHONE" /></label>
+            <label><span class="sr-only">Class</span>
+              <select class="field" name="class">
+                <option value="">CHOOSE A CLASS</option><option value="technique">Technique</option><option value="high-heels-choreo">High Heels Choreo</option><option value="frame-up">Frame Up Choreo</option><option value="stretching">Stretching</option><option value="choreo">Choreo</option><option value="private">Private lesson</option><option value="workshop">Workshop</option><option value="other">Other</option>
+              </select>
+            </label>
+            <label><span class="sr-only">Message</span><textarea class="field" name="message" rows="4" maxlength="500" placeholder="YOUR MESSAGE"></textarea></label>
+            <button class="btn btn-red mx-auto mt-2 px-14 py-3 text-3xl" type="submit">Dance</button>
+            <button id="whatsapp-send" class="mx-auto text-base underline hover:text-red" type="button"><i class="bi bi-whatsapp"></i> or send it via WhatsApp</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="bg-nude/10">
+        <div class="section reveal grid gap-10 md:grid-cols-2 md:gap-16">
+          <div>
+            <h2 class="text-3xl">Find us</h2>
+            <address class="mt-4 not-italic">
+              <p class="font-semibold">Wiese</p>
+              <p>Wiesendamm 24, 22305 Hamburg</p>
+              <p class="mt-2"><a class="hover:text-red" href="mailto:moin@hheels.dance">moin@hheels.dance</a></p>
+            </address>
+            <div class="mt-6 flex gap-5 text-3xl">
+              <a class="hover:text-red" href="https://www.instagram.com/hheels.dance/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a class="hover:text-red" href="https://api.whatsapp.com/send?phone=4915259516681" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a class="hover:text-red" href="https://www.youtube.com/@VladaKosha" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <iframe class="aspect-video w-full" title="Map: Wiesendamm 24, Hamburg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.879268442346!2d10.03831676783386!3d53.58760215648656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18939dc21a827%3A0x324ad128ed0c7f6f!2sWiesendamm%2024%2C%2022305%20Hamburg%2C%20Germany!5e0!3m2!1sen!2spl!4v1700055053720!5m2!1sen!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    
       <!-- Eversports loader: include only once per page -->
       <script type="module" src="https://widget-static.eversports.io/loader.js" async defer></script>
     </main>
